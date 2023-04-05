@@ -11,11 +11,14 @@ import {
   Select,
   Checkbox,
   Button,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 
 type CartDetailsProps = {};
 
 const CartDetails: React.FC<CartDetailsProps> = () => {
+  const variableColSpan = useBreakpointValue({ base: 2, md: 1 });
+
   return (
     <VStack w="full" h="full" p={10} spacing={10} alignItems="flex-start">
       <VStack spacing={3} alignItems="flex-start">
@@ -29,13 +32,13 @@ const CartDetails: React.FC<CartDetailsProps> = () => {
         </Text>
       </VStack>
       <SimpleGrid columns={2} columnGap={3} rowGap={6} w="full">
-        <GridItem colSpan={1}>
+        <GridItem colSpan={variableColSpan}>
           <FormControl>
             <FormLabel>First Name</FormLabel>
             <Input placeholder="John" />
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={variableColSpan}>
           <FormControl>
             <FormLabel>Last Name</FormLabel>
             <Input placeholder="Doe" />
@@ -47,13 +50,13 @@ const CartDetails: React.FC<CartDetailsProps> = () => {
             <Input placeholder="99 Lost Way Blvd" />
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={variableColSpan}>
           <FormControl>
             <FormLabel>City</FormLabel>
             <Input placeholder="Doeville" />
           </FormControl>
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={variableColSpan}>
           <FormControl>
             <FormLabel>Country</FormLabel>
             <Select name="country">

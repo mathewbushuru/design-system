@@ -12,10 +12,22 @@ const SimpleCart: React.FC<SimpleCartProps> = () => {
 
   return (
     <Container maxW="container.xl" m="0 auto">
-      <Flex h="100vh" py={20} gap={6} position="relative">
+      <Flex
+        h={{ base: "auto", md: "100vh" }}
+        py={[10, 20]}
+        gap={6}
+        direction={{ base: "column-reverse", md: "row" }}
+        position="relative"
+      >
         <CartDetails />
         <CartSummary />
-        <Box position="absolute" right={0} top={8} cursor="pointer" onClick={toggleColorMode}>
+        <Box
+          position="absolute"
+          right={0}
+          top={8}
+          cursor="pointer"
+          onClick={toggleColorMode}
+        >
           <IconMoonStars />
         </Box>
       </Flex>

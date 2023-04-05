@@ -37,9 +37,18 @@ const CartSummary: React.FC<CartSummaryProps> = () => {
           updates to your email and 10% off your order.
         </Text>
       </VStack>
-      <HStack spacing={6} w="80%" justify="space-between" p="0 32px">
-        <AspectRatio ratio={1} width={24}>
-          <Image src="https://unsplash.it/300/300" rounded={6}/>
+      <HStack
+        spacing={6}
+        w={{ base: "100%", md: "80%" }}
+        justify="space-between"
+        p={{ base: 0, md: "0 32px" }}
+      >
+        <AspectRatio
+          ratio={1}
+          width={{ base: "full", md: 24 }}
+          display={{ base: "none", md: "unset" }}
+        >
+          <Image src="https://unsplash.it/300/300" rounded={6} />
         </AspectRatio>
         <VStack spacing={0} align="left">
           <Text color={textColor} fontWeight={600}>
@@ -52,22 +61,22 @@ const CartSummary: React.FC<CartSummaryProps> = () => {
         <Text color={textColor}>$99.99</Text>
       </HStack>
       <VStack w="full" alignItems="stretch">
-        <HStack justifyContent="space-between" p="0 32px">
+        <HStack justifyContent="space-between" p={{ base: 0, md: "0 32px" }}>
           <Text color="gray.500">Subtotal</Text>
           <Text color={textColor}>$99.99</Text>
         </HStack>
-        <HStack justifyContent="space-between" p="0 32px">
+        <HStack justifyContent="space-between" p={{ base: 0, md: "0 32px" }}>
           <Text color="gray.500">Tax</Text>
           <Text color={textColor}>${(0.12 * 99.99).toFixed(2)}</Text>
         </HStack>
-        <HStack justifyContent="space-between" p="0 32px">
+        <HStack justifyContent="space-between" p={{ base: 0, md: "0 32px" }}>
           <Text color="gray.500">Shipping</Text>
           <Text color={textColor}>${(0.03 * 99.99).toFixed(2)}</Text>
         </HStack>
         <StackDivider />
         <Divider />
         <StackDivider />
-        <HStack justifyContent="space-between" p="0 32px">
+        <HStack justifyContent="space-between" p={{ base: 0, md: "0 32px" }}>
           <Text color={textColor}>Total</Text>
           <Text color={textColor} fontWeight={600}>
             ${(1.15 * 99.99).toFixed(2)}
