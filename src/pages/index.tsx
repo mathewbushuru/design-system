@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import LoginColorMode from "@/components/forms/login/LoginColorMode";
+import SimpleLogin from "@/components/forms/login/SimpleLogin";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <LoginColorMode/>
+        <SimpleLogin/>
       </main>
     </>
   );
