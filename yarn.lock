@@ -1041,6 +1041,19 @@
   dependencies:
     tslib "^2.4.0"
 
+"@tabler/icons-react@^2.14.0":
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-2.14.0.tgz#38f3b94844d61e28249e5f704b84eafbf38d7d57"
+  integrity sha512-5lsXkV2T+ygKwrernJnnbkRtNdbBp8JANP17gdPHhhhVEUIuvaTWU+lDEwJFgyaChlepl5AwcFoMMhcnlPO6Hw==
+  dependencies:
+    "@tabler/icons" "2.14.0"
+    prop-types "^15.7.2"
+
+"@tabler/icons@2.14.0":
+  version "2.14.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.14.0.tgz#167658ba130272dcf61bfd36abcc513f696f4c87"
+  integrity sha512-q4qFe8P0M0cwRlQajPtjucjVrRPVkv/aFHWrCm+HZH9eOkjYSyyFtn7/Zz7lkjBcGiPUkh08d/d3IvJToP/zvw==
+
 "@types/lodash.mergewith@4.6.7":
   version "4.6.7"
   resolved "https://registry.yarnpkg.com/@types/lodash.mergewith/-/lodash.mergewith-4.6.7.tgz#eaa65aa5872abdd282f271eae447b115b2757212"
@@ -1412,7 +1425,7 @@ postcss@8.4.14:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-prop-types@^15.6.2:
+prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==

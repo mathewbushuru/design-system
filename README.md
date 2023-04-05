@@ -1,8 +1,14 @@
-## Chakra Components
+## My Component Library
 
-Some ReactJS/NextJS Components pre-built with TypeScript and Chakra.
+Language: `TypeScript`
+Framework: `NextJS`/`ReactJS`
+Styling/UI: `Chakra`
 
 ### Forms 
+
+##### SimpleCart
+![Simple cart page](./docs/SimpleCart1.jpg)
+![Simple cart page](./docs/SimpleCart2.jpg)
 
 ##### SimpleLogin
 ![Simple login page](./docs/SimpleLogin.jpg)
