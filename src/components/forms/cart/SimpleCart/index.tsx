@@ -9,7 +9,7 @@ type SimpleCartProps = {};
 const SimpleCart: React.FC<SimpleCartProps> = () => {
   return (
     <Container maxW="container.xl" m="0 auto">
-      <Flex h="100vh" py={20}>
+      <Flex h="100vh" py={20} gap={6}>
          <CartDetails/>
          <CartSummary/>
       </Flex>

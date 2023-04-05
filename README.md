@@ -1,6 +1,6 @@
 ## Chakra Components
 
-Some React Components pre-built with TypeScript and Chakra.
+Some ReactJS/NextJS Components pre-built with TypeScript and Chakra.
 
 ### Forms 
 
