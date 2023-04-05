@@ -4,6 +4,5 @@ Some React Components pre-built with TypeScript and Chakra.
 
 ### Forms 
 
-##### Simple login page
-
+##### SimpleLogin
 ![Simple login page](./docs/SimpleLogin.jpg)

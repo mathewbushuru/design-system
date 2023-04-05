@@ -1,6 +1,7 @@
 import Head from "next/head";
 
-import SimpleLogin from "@/components/forms/login/SimpleLogin";
+// import SimpleLogin from "@/components/forms/login/SimpleLogin";
+import SimpleCart from "@/components/forms/cart/SimpleCart";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <SimpleLogin/>
+        <SimpleCart/>
       </main>
     </>
   );
