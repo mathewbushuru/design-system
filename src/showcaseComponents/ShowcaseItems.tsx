@@ -16,7 +16,7 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
 
       <ShowcaseItem
         componentName="SimpleLogin"
-        mobileResponsive={false}
+        mobileResponsive={true}
         darkModeToggle={false}
       />
     </UnorderedList>

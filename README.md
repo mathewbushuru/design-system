@@ -6,15 +6,42 @@ Framework: `NextJS`/`ReactJS`
 
 Styling/UI: `Chakra`
 
+To use a component, copy the code from `./src/components/<component-dir>/<component-name>` to your project. If it is a Javascript project, delete the type definitions. For example:
+```sh
+type ShowcaseItemProps = {
+  componentName: string;
+  mobileResponsive: true | false;
+  darkModeToggle: true | false;
+};
+
+export const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
+  componentName,
+  mobileResponsive,
+  darkModeToggle,
+}) => {
+  return (..)
+```
+becomes
+```sh
+export const ShowcaseItem = ({
+  componentName,
+  mobileResponsive,
+  darkModeToggle,
+}) => {
+  return (..)
+```
+
 ### Forms 
 
 ##### SimpleCart
 - [x] Mobile responsive
 - [x] Toggle color mode
+
 ![Simple cart page](./docs/SimpleCart1.jpg)
 ![Simple cart page](./docs/SimpleCart2.jpg)
 
 ##### SimpleLogin
-- [ ] Mobile responsive
+- [x] Mobile responsive
 - [ ] Toggle color mode
+
 ![Simple login page](./docs/SimpleLogin.jpg)
