@@ -10,8 +10,8 @@ To use a component, copy the code from `./src/components/<component-dir>/<compon
 ```sh
 type ShowcaseItemProps = {
   componentName: string;
-  mobileResponsive: true | false;
-  darkModeToggle: true | false;
+  mobileResponsive: boolean;
+  darkModeToggle: boolean;
 };
 
 export const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
@@ -39,9 +39,3 @@ export const ShowcaseItem = ({
 
 ![Simple cart page](./docs/SimpleCart1.jpg)
 ![Simple cart page](./docs/SimpleCart2.jpg)
-
-##### SimpleLogin
-- [x] Mobile responsive
-- [ ] Toggle color mode
-
-![Simple login page](./docs/SimpleLogin.jpg)
