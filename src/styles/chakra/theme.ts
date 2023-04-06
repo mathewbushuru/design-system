@@ -2,9 +2,14 @@ import {
   extendTheme,
   theme as baseTheme,
   withDefaultColorScheme,
-  withDefaultVariant,
+  withDefaultVariant
 } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+
+import {
+  buttonStyles,
+  checkboxStyles,
+  inputSelectStyles,
+} from "./componentThemes";
 
 const colors = {
   brand: {
@@ -21,57 +26,26 @@ const colors = {
   },
 };
 
-const checkboxStyles = {
-  baseStyle: {
-    control: {
-      _focus: {
-        ring: 2,
-        ringColor: "brand.500",
-      },
-    },
-  },
-};
 
-const inputSelectStyles = {
-  variants: {
-    filled: {
-      field: {
-        _focus: {
-          borderColor: "brand.500",
-        },
-      },
-    },
+
+const themeConfig = {
+  colors,
+  components: {
+    Button: { ...buttonStyles },
+    Checkbox: { ...checkboxStyles },
+    Input: { ...inputSelectStyles },
+    Select: { ...inputSelectStyles },
   },
+  fonts: {
+    heading: `Montserrat, ${baseTheme.fonts?.heading}`,
+    body: `Inter, ${baseTheme.fonts?.body}`,
+  },
+  initialColorMode: "light",
+  useSystemColorMode: false,
 };
 
 const theme = extendTheme(
-  {
-    colors,
-    components: {
-      Button: {
-        variants: {
-          primary: (props: any) => ({
-            backgroundColor: mode("brand.500", "brand.200")(props),
-            color: mode("gray.50", "gray.900")(props),
-            _focus: {
-              ring: 2,
-              ringColor: "brand.500",
-            },
-            _hover:{
-              backgroundColor: mode("brand.600", "brand.300")(props),
-            }
-          }),
-        },
-      },
-      Checkbox: { ...checkboxStyles },
-      Input: { ...inputSelectStyles },
-      Select: { ...inputSelectStyles },
-    },
-    fonts: {
-      heading: `Montserrat, ${baseTheme.fonts?.heading}`,
-      body: `Inter, ${baseTheme.fonts?.body}`,
-    },
-  },
+  themeConfig,
   withDefaultColorScheme({
     colorScheme: "brand",
   }),
