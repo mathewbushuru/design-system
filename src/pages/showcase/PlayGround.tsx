@@ -1,13 +1,19 @@
 import { FC } from "react";
-import { Container, Box } from "@chakra-ui/react";
+import { Flex, Spacer, Box } from "@chakra-ui/react";
 
 interface PlayGroundProps {}
 
 const PlayGround: FC<PlayGroundProps> = ({}) => {
   return (
-    <>
-      <Box bg="tomato" p={4} color="white">This is the box</Box>
-    </>
+    <Flex m={12}>
+      <Box bg="red.400" p={4}>
+        Box 1
+      </Box>
+      <Spacer/>
+      <Box bg="green.400" p={4}>
+        Box 2
+      </Box>
+    </Flex>
   );
 };
 

@@ -15,6 +15,12 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
       />
 
       <ShowcaseItem
+        componentName="NavbarLogoBtns"
+        mobileResponsive={false}
+        darkModeToggle={false}
+      />
+
+      <ShowcaseItem
         componentName="SimpleCart"
         mobileResponsive={true}
         darkModeToggle={true}

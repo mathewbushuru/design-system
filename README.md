@@ -47,3 +47,11 @@ export const ShowcaseItem = ({
 
 ![Simple cart page](./docs/SimpleCart1.jpg)
 ![Simple cart page](./docs/SimpleCart2.jpg)
+
+### Navbars 
+
+##### NavbarLogoBtns
+- [x] Mobile responsive
+- [x] Toggle color mode
+
+![Simple cart page](./docs/NavbarLogoBtns.jpg)
