@@ -37,7 +37,7 @@ export const ShowcaseItem = ({
 - [x] Mobile responsive
 - [x] Toggle color mode
 
-![Simple cart page](./docs/AirbnbCard1.jpg)
+![Airbnb](./docs/AirbnbCard1.jpg)
 
 ### Forms 
 
@@ -45,7 +45,15 @@ export const ShowcaseItem = ({
 - [x] Mobile responsive
 - [x] Toggle color mode
 
-![Simple cart page](./docs/SimpleCart1.jpg)
+![SimpleCart](./docs/SimpleCart1.jpg)
+
+### Layouts 
+
+##### HolyGrail
+- [ ] Mobile responsive
+- [ ] Toggle color mode
+
+![HolyGrail](./docs/HolyGrail.jpg)
 
 ### Navbars 
 
