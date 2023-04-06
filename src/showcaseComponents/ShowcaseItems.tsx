@@ -9,6 +9,12 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
   return (
     <UnorderedList spacing={6} mt={3}>
       <ShowcaseItem
+        componentName="AirbnbCard"
+        mobileResponsive={true}
+        darkModeToggle={true}
+      />
+
+      <ShowcaseItem
         componentName="SimpleCart"
         mobileResponsive={true}
         darkModeToggle={true}

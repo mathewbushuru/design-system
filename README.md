@@ -31,6 +31,14 @@ export const ShowcaseItem = ({
   return (..)
 ```
 
+### Cards 
+
+##### AirbnbCard
+- [x] Mobile responsive
+- [x] Toggle color mode
+
+![Simple cart page](./docs/AirbnbCard.jpg)
+
 ### Forms 
 
 ##### SimpleCart
