@@ -46,7 +46,6 @@ export const ShowcaseItem = ({
 - [x] Toggle color mode
 
 ![Simple cart page](./docs/SimpleCart1.jpg)
-![Simple cart page](./docs/SimpleCart2.jpg)
 
 ### Navbars 
 
