@@ -50,7 +50,7 @@ export const ShowcaseItem = ({
 ### Navbars 
 
 ##### NavbarLogoBtns
-- [x] Mobile responsive
-- [x] Toggle color mode
+- [ ] Mobile responsive
+- [ ] Toggle color mode
 
 ![Simple cart page](./docs/NavbarLogoBtns.jpg)
