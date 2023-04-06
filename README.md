@@ -2,7 +2,7 @@
 
 Language: `TypeScript`
 
-Framework: `NextJS`/`ReactJS`
+Framework: `NextJS`
 
 Styling/UI: `Chakra`
 
