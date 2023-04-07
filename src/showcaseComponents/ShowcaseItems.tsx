@@ -31,6 +31,12 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
         mobileResponsive={true}
         darkModeToggle={true}
       />
+
+      <ShowcaseItem
+        componentName="SocialMediaCard"
+        mobileResponsive={true}
+        darkModeToggle={true}
+      />
     </UnorderedList>
   );
 };
