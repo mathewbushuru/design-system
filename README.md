@@ -63,8 +63,14 @@ export const ShowcaseItem = ({
 
 ### Navbars 
 
+##### NavbarDrawer
+- [x] Mobile responsive
+- [x] Toggle color mode
+
+![NavbarDrawer](./docs/NavbarDrawer.jpg)
+
 ##### NavbarLogoBtns
 - [ ] Mobile responsive
 - [ ] Toggle color mode
 
-![Simple cart page](./docs/NavbarLogoBtns.jpg)
+![NavbarLogoBtns](./docs/NavbarLogoBtns.jpg)

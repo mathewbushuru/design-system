@@ -21,6 +21,12 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
       />
 
       <ShowcaseItem
+        componentName="NavbarDrawer"
+        mobileResponsive={true}
+        darkModeToggle={true}
+      />
+
+      <ShowcaseItem
         componentName="NavbarLogoBtns"
         mobileResponsive={false}
         darkModeToggle={false}
