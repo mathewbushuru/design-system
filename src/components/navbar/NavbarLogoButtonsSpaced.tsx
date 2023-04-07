@@ -13,7 +13,13 @@ interface NavbarLogoBtnsProps {}
 
 const NavbarLogoBtns: FC<NavbarLogoBtnsProps> = ({}) => {
   return (
-    <Flex minW="max-content" align="center" px={4} py={1} boxShadow="0 4px 2px -2px #CBD5E0">
+    <Flex
+      minW="max-content"
+      align="center"
+      px={4}
+      py={1}
+      boxShadow="0 4px 2px -2px #CBD5E0"
+    >
       <Center p={2}>
         <Icon as={LogoIcon} fontSize="4xl" color="brand.500" />
       </Center>

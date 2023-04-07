@@ -15,6 +15,12 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
       />
 
       <ShowcaseItem
+        componentName="ColorSchemeToggle"
+        mobileResponsive={true}
+        darkModeToggle={true}
+      />
+
+      <ShowcaseItem
         componentName="HolyGrail"
         mobileResponsive={false}
         darkModeToggle={false}

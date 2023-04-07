@@ -31,6 +31,14 @@ export const ShowcaseItem = ({
   return (..)
 ```
 
+### Buttons 
+
+##### ColorSchemeToggle
+- [x] Mobile responsive
+- [x] Toggle color mode
+
+![Airbnb](./docs/ColorSchemeToggle.jpg)
+
 ### Cards 
 
 ##### AirbnbCard
