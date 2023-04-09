@@ -71,6 +71,12 @@ export const ShowcaseItem = ({
 
 ### Navbars 
 
+##### NavbarDividedVertical
+- [ ] Mobile responsive
+- [x] Toggle color mode
+
+![NavbarDividedVertical](./docs/NavbarDividedVertical.jpg)
+
 ##### NavbarDrawer
 - [x] Mobile responsive
 - [x] Toggle color mode
