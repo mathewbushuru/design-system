@@ -6,11 +6,11 @@ import {
   IconExternalLink,
 } from "@tabler/icons-react";
 
-type ShowcaseItemProps = {
+interface ShowcaseItemProps {
   componentName: string;
-  mobileResponsive: true | false;
-  darkModeToggle: true | false;
-};
+  mobileResponsive: boolean;
+  darkModeToggle: boolean;
+}
 
 const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
   componentName,

@@ -1,18 +1,14 @@
 ## My Component Library
 
-Language: `TypeScript`
-
-Framework: `NextJS`
-
-Styling/UI: `Chakra`
+This is a collection of some React components and UI elements that I use often. They are either styled using [`TailwindCSS`](https://tailwindcss.com/) , [`ChakraUI`](https://chakra-ui.com/) or my own custom CSS.
 
 To use a component, copy the code from `./src/components/<component-dir>/<component-name>` to your project. If it is a Javascript project, delete the type definitions. For example:
 ```sh
-type ShowcaseItemProps = {
+interface ShowcaseItemProps {
   componentName: string;
   mobileResponsive: boolean;
   darkModeToggle: boolean;
-};
+}
 
 export const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
   componentName,
@@ -34,6 +30,7 @@ export const ShowcaseItem = ({
 ### Buttons 
 
 ##### ColorSchemeToggle
+*`Chakra`*
 - [x] Mobile responsive
 - [x] Toggle color mode
 
@@ -42,12 +39,14 @@ export const ShowcaseItem = ({
 ### Cards 
 
 ##### AirbnbCard
+*`Chakra`*
 - [x] Mobile responsive
 - [x] Toggle color mode
 
 ![Airbnb](./docs/AirbnbCard1.jpg)
 
 ##### SocialMediaCard
+*`Chakra`*
 - [x] Mobile responsive
 - [x] Toggle color mode
 
@@ -56,6 +55,7 @@ export const ShowcaseItem = ({
 ### Forms 
 
 ##### SimpleCart
+*`Chakra`*
 - [x] Mobile responsive
 - [x] Toggle color mode
 
@@ -64,6 +64,7 @@ export const ShowcaseItem = ({
 ### Layouts 
 
 ##### HolyGrail
+*`Chakra`*
 - [ ] Mobile responsive
 - [ ] Toggle color mode
 
@@ -72,18 +73,21 @@ export const ShowcaseItem = ({
 ### Navbars 
 
 ##### NavbarDividedVertical
+*`Chakra`*
 - [ ] Mobile responsive
 - [x] Toggle color mode
 
 ![NavbarDividedVertical](./docs/NavbarDividedVertical.jpg)
 
 ##### NavbarDrawer
+*`Chakra`*
 - [x] Mobile responsive
 - [x] Toggle color mode
 
 ![NavbarDrawer](./docs/NavbarDrawer.jpg)
 
 ##### NavbarLogoBtns
+*`Chakra`*
 - [ ] Mobile responsive
 - [ ] Toggle color mode
 
