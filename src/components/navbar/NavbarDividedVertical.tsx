@@ -25,13 +25,9 @@ const analyticsMockItems = [
   "Reports",
 ];
 
-interface NavbarDividedVerticalProps {
-  navItems: any;
-}
+type NavItemType = { icon: any; label: string };
 
-const NavbarDividedVertical: FC<NavbarDividedVerticalProps> = ({
-  navItems,
-}) => {
+const NavbarDividedVertical = ({ navItems }: { navItems: NavItemType[] }) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -58,7 +54,7 @@ const NavbarDividedVertical: FC<NavbarDividedVerticalProps> = ({
   );
 };
 
-function Aside({ navItems }: { navItems: any }) {
+function Aside({ navItems }: { navItems: NavItemType[] }) {
   return (
     <Flex direction="column" align="center" gap="4" mt="5">
       <IconButton
@@ -69,29 +65,17 @@ function Aside({ navItems }: { navItems: any }) {
       />
       <Divider />
 
-      {navItems.map((navItem: any) => {
-        if (navItem.label === "Analytics") {
-          return (
-            <IconButton
-              variant="solid"
-              icon={navItem.icon}
-              aria-label={navItem.label}
-              key={navItem.label}
-            />
-          );
-          //todo - implement active link instead of this
-        }
+      {navItems.map((navItem: NavItemType, index: number) => {
+        //todo - implement active link solid icon
         return (
-          <>
-            <IconButton
-              variant="ghost"
-              icon={navItem.icon}
-              aria-label={navItem.label}
-              key={navItem.label}
-            />
-          </>
+          <IconButton
+            variant={navItem.label === "Analytics" ? "solid" : "ghost"}
+            icon={navItem.icon}
+            aria-label={navItem.label}
+            key={navItem.label}
+          />
         );
-      })}
+      })} 
     </Flex>
   );
 }
@@ -105,7 +89,13 @@ function MainNav({ items }: { items: any }) {
       <Divider mt="6" mb="4" />
 
       {/* todo : implement active link to replace this */}
-      <Button w="full" variant="solid" rounded="none" justifyContent="start" key="dashboard">
+      <Button
+        w="full"
+        variant="solid"
+        rounded="none"
+        justifyContent="start"
+        key="dashboard"
+      >
         Dashboard
       </Button>
 
