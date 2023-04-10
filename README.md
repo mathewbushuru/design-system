@@ -30,8 +30,11 @@ export const ShowcaseItem = ({
 ### Buttons 
 
 ##### ColorSchemeToggle
+
 *`Chakra`*
+
 *April 7, 2023*
+
 - [x] Mobile responsive
 - [x] Toggle color mode
 
@@ -40,16 +43,22 @@ export const ShowcaseItem = ({
 ### Cards 
 
 ##### AirbnbCard
+
 *`Chakra`*
+
 *April 6, 2023*
+
 - [x] Mobile responsive
 - [x] Toggle color mode
 
 ![Airbnb](./docs/AirbnbCard1.jpg)
 
 ##### SocialMediaCard
+
 *`Chakra`*
+
 *April 6, 2023*
+
 - [x] Mobile responsive
 - [x] Toggle color mode
 
@@ -58,8 +67,11 @@ export const ShowcaseItem = ({
 ### Forms 
 
 ##### SimpleCart
+
 *`Chakra`*
+
 *April 5, 2023*
+
 - [x] Mobile responsive
 - [x] Toggle color mode
 
@@ -68,8 +80,11 @@ export const ShowcaseItem = ({
 ### Layouts 
 
 ##### HolyGrail
+
 *`Chakra`*
+
 *April 6, 2023*
+
 - [ ] Mobile responsive
 - [ ] Toggle color mode
 
@@ -78,32 +93,44 @@ export const ShowcaseItem = ({
 ### Navbars 
 
 ##### NavbarDividedHorizontal
+
 *`Tailwind`*
+
 *April 10, 2023*
+
 - [ ] Mobile responsive
 - [ ] Toggle color mode
 
 ![NavbarDividedHorizontal](./docs/NavbarDividedHorizontal.jpg)
 
 ##### NavbarDividedVertical
+
 *`Chakra`*
+
 *April 9, 2023*
+
 - [ ] Mobile responsive
 - [x] Toggle color mode
 
 ![NavbarDividedVertical](./docs/NavbarDividedVertical.jpg)
 
 ##### NavbarDrawer
+
 *`Chakra`*
+
 *April 6, 2023*
+
 - [x] Mobile responsive
 - [x] Toggle color mode
 
 ![NavbarDrawer](./docs/NavbarDrawer.jpg)
 
 ##### NavbarLogoBtns
+
 *`Chakra`*
+
 *April 6, 2023*
+
 - [ ] Mobile responsive
 - [ ] Toggle color mode
 
