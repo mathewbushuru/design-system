@@ -1,6 +1,6 @@
 ## My Component Library
 
-This is a collection of some React components and UI elements that I use often. They are either styled using [`TailwindCSS`](https://tailwindcss.com/) , [`ChakraUI`](https://chakra-ui.com/) or my own custom CSS.
+This is a collection of some React components and UI elements that I use often. They are styled using either [`TailwindCSS`](https://tailwindcss.com/) , [`ChakraUI`](https://chakra-ui.com/) or my own custom CSS.
 
 To use a component, copy the code from `./src/components/<component-dir>/<component-name>` to your project. If it is a Javascript project, delete the type definitions. For example:
 ```sh
