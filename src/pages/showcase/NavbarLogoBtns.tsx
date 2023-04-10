@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import NavbarLogoBtns from "@/components/navbar/NavbarLogoButtonsSpaced";
+import NavbarLogoBtns from "@/components/navbars/NavbarLogoButtonsSpaced";
 
 interface NavbarLogoBtnsProps {}
 

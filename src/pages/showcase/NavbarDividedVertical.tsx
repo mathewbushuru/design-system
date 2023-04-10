@@ -1,5 +1,5 @@
 import { FC } from "react";
-import NavbarDividedVertical from "@/components/navbar/NavbarDividedVertical";
+import NavbarDividedVertical from "@/components/navbars/NavbarDividedVertical";
 import { IconMoonStars } from "@tabler/icons-react";
 import { Box, useColorMode } from "@chakra-ui/react";
 import {

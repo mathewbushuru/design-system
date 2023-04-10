@@ -33,6 +33,12 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
       />
 
       <ShowcaseItem
+        componentName="NavbarDividedHorizontal"
+        mobileResponsive={false}
+        darkModeToggle={false}
+      />
+
+      <ShowcaseItem
         componentName="NavbarDividedVertical"
         mobileResponsive={false}
         darkModeToggle={true}

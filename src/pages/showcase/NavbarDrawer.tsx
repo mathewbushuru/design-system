@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Box, Center, useColorMode } from "@chakra-ui/react";
 import { IconMoonStars } from "@tabler/icons-react";
 
-import NavbarDrawer from "@/components/navbar/NavbarDrawer";
+import NavbarDrawer from "@/components/navbars/NavbarDrawer";
 
 interface NavbarDrawerPageProps {}
 
