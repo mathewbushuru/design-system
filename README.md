@@ -77,6 +77,19 @@ export const ShowcaseItem = ({
 
 ![SimpleCart](./docs/SimpleCart1.jpg)
 
+### Heros 
+
+##### HeroImageReviews
+
+*`Tailwind`*
+
+*April 11, 2023*
+
+- [x] Mobile responsive
+- [ ] Toggle color mode
+
+![HeroImageReviews](./docs/HeroImageReviews.jpg)
+
 ### Layouts 
 
 ##### HolyGrail
