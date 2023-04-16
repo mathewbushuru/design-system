@@ -23,6 +23,13 @@ const ShowcaseItems: React.FC<ShowcaseItemsProps> = () => {
       />
 
       <ShowcaseItem
+        componentName="FooterCenteredLinks"
+        mobileResponsive={true}
+        darkModeToggle={false}
+        ui="TailwindCSS"
+      />
+
+      <ShowcaseItem
         componentName="HeroImageReviews"
         mobileResponsive={true}
         darkModeToggle={false}
