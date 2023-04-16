@@ -52,7 +52,7 @@ To use a component, copy the code from `./src/components/<component-dir>/<compon
 - [x] Mobile responsive
 - [ ] Toggle color mode
 
-![FooterCenteredLinks]()
+![FooterCenteredLinks](./public/FooterCenteredLinks.jpg)
 
 ### Forms 
 
