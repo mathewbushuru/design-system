@@ -46,9 +46,11 @@ const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
           )}
           <ListIcon as={IconExternalLink} />
         </Link>
-        <Badge variant="outline" colorScheme="teal" mt={1}>
-          {ui}
-        </Badge>
+        {ui === "TailwindCSS" && (
+          <Badge variant="outline" colorScheme="teal" mt={1}>
+            {ui}
+          </Badge>
+        )}
         <Image
           src={`/${componentName}.jpg`}
           mt={4}
@@ -57,7 +59,7 @@ const ShowcaseItem: React.FC<ShowcaseItemProps> = ({
           maxW={{ lg: "container.lg" }}
         />
       </ListItem>
-      <Divider/>
+      <Divider />
     </>
   );
 };
