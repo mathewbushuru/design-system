@@ -2,8 +2,12 @@
   "name": "design-system",
   "private": true,
   "scripts": {
+    "dev": "turbo dev",
+    "dev:docs": "turbo dev --filter=docs  --filter=ui",
+    "dev:playground": "turbo dev --filter=playground  --filter=ui",
     "build": "turbo build",
-    "dev": "turbo dev"
+    "build:ui": "turbo build --filter=ui",
+    "build:docs": "turbo build --filter=docs"
   },
   "devDependencies": {
     "turbo": "latest"
