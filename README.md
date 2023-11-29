@@ -1,4 +1,6 @@
-### Apps and Packages
+My personal design system to use across projects.
+
+##### Apps and Packages
 
 - `docs`: a NextJS / React application.
 - `playground`: A Vite / React application.
