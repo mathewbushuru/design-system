@@ -1,0 +1,12 @@
+{
+    "name": "@mathewbushuru/config",
+    "version": "1.0.0",
+    "description": "",
+    "license": "ISC",
+    "publishConfig": {
+      "access": "public"
+    },
+    "devDependencies": {
+      "tailwindcss": "^3.3.5"
+    }
+  }
