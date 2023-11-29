@@ -1,0 +1,15 @@
+export const Colors = {
+  background: "#fefefe",
+  foreground: "#f8fafc",
+  primaryBackground: "#0f172a",
+  primaryForeground: "#ffffff",
+  secondaryBackground: "#f1f5f9",
+  secondaryForeground: "#0f172a",
+  popoverBackground: "#ffffff",
+  popoverForeground: "#0f172a",
+  mutedBackground: "#f1f5f9",
+  mutedForeground: "#64748b",
+  destructiveBackground: "#ff0000",
+  destructiveForeground: "#f8fafc",
+  border: "#ccc",
+};
