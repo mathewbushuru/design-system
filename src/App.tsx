@@ -1,5 +1,9 @@
 function App() {
-  return <div className="text-teal-500">Design system</div>;
+  return (
+    <div className="h-screen bg-background text-primary text-teal-500">
+      Design system
+    </div>
+  );
 }
 
 export default App;
