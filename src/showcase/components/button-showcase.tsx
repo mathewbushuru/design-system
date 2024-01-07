@@ -3,7 +3,7 @@ import { Heart } from "lucide-react"
 import Button from "@/components/ui/button"
 
 export default function ButtonShowcase(){
-    return <div className="border p-6">
+    return <div className="border py-6 px-12 rounded-md">
         <p>Default button</p>
         <Button>Default button</Button>
 
