@@ -6,10 +6,11 @@ import ButtonShowcase from "@/showcase/components/button-showcase";
 function App() {
   return (
     <ThemeProvider defaultTheme="light">
-      <div className="h-screen bg-background text-foreground flex flex-col items-center p-8 gap-4">
+      <div className="flex min-h-screen flex-col items-center gap-4 bg-background p-8 text-foreground">
         Design system
-        <ThemeToggle />
-
+        <div className="">
+          <ThemeToggle />
+        </div>
         <ButtonShowcase />
       </div>
     </ThemeProvider>
