@@ -1,3 +1,5 @@
+import { GanttChart } from "lucide-react";
+
 import ThemeToggle from "@/components/theme-toggle";
 
 import ButtonShowcase from "@/showcase/components/button-showcase";
@@ -14,7 +16,12 @@ const HomePage = () => {
       </div>
 
       {/* Page content  */}
-      <div className="flex flex-1 flex-col items-center gap-4 overflow-y-scroll py-8">
+      <div className="flex flex-1 flex-col items-center gap-4 overflow-y-scroll pb-8 pt-20">
+        {/* Mobile Navbar  */}
+        <div className="fixed left-0 right-0 top-0 flex w-full items-center justify-between border-b px-4 py-2 lg:hidden backdrop-blur-md">
+          <GanttChart className="h-6 w-6" />
+          <ThemeToggle />
+        </div>
         Design system
         <div className="">
           <ThemeToggle />
