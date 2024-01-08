@@ -1,6 +1,7 @@
 import { GanttChart } from "lucide-react";
 
 import ThemeToggle from "@/components/theme-toggle";
+import SideNavigation from "@/components/side-navigation";
 import { Drawer, DrawerTrigger, DrawerContent } from "@/components/ui/drawer";
 
 function MobileNavbar() {
@@ -13,7 +14,7 @@ function MobileNavbar() {
             <div className="sr-only">Open side navigation</div>
           </DrawerTrigger>
           <DrawerContent position="left">
-            Sidebar
+            <SideNavigation />
           </DrawerContent>
         </Drawer>
         <span className="ml-1 font-mono font-semibold tracking-widest lg:ml-2">
