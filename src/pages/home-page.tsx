@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="flex max-h-screen overflow-hidden bg-background text-foreground">
       {/* Sidebar  */}
-      <div className="hidden min-w-40 flex-col items-center gap-2 border-r py-4 lg:flex">
+      <div className="hidden min-w-60 flex-col items-center gap-2 border-r pb-8 pt-20 lg:flex">
         Sidebar
         <ThemeToggle />
       </div>
