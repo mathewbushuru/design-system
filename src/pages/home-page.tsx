@@ -1,4 +1,3 @@
-import ThemeToggle from "@/components/theme-toggle";
 import MobileNavbar from "@/components/mobile-navbar";
 
 import ButtonShowcase from "@/showcase/components/button-showcase";
@@ -11,7 +10,6 @@ const HomePage = () => {
       {/* Sidebar  */}
       <div className="hidden min-w-60 flex-col items-center gap-2 border-r pb-8 pt-20 lg:flex">
         Sidebar
-        <ThemeToggle />
       </div>
 
       {/* Page content  */}
