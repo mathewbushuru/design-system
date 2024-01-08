@@ -1,6 +1,7 @@
 import ThemeToggle from "@/components/theme-toggle";
 
 import ButtonShowcase from "@/showcase/components/button-showcase";
+import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
           Muted text
         </p>
         <ButtonShowcase />
+        <DropdownMenuShowcase />
       </div>
     </div>
   );
