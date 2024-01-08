@@ -11,6 +11,7 @@ function App() {
         <div className="">
           <ThemeToggle />
         </div>
+        <p className="text-muted-foreground border border-border p-4">Muted text</p>
         <ButtonShowcase />
       </div>
     </ThemeProvider>
