@@ -2,6 +2,7 @@ import ThemeToggle from "@/components/theme-toggle";
 
 import ButtonShowcase from "@/showcase/components/button-showcase";
 import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";
+import DrawerShowCase from "@/showcase/components/drawer-showcase";
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
         <p className="border p-4 text-muted-foreground">Muted text</p>
         <ButtonShowcase />
         <DropdownMenuShowcase />
+        <DrawerShowCase />
       </div>
     </div>
   );
