@@ -7,8 +7,9 @@ const HomePage = () => {
   return (
     <div className="flex max-h-screen overflow-hidden bg-background text-foreground">
       {/* Sidebar  */}
-      <div className="hidden min-w-40 border-r border-border lg:block">
+      <div className="hidden min-w-40 flex-col items-center gap-2 border-r py-4 lg:flex">
         Sidebar
+        <ThemeToggle />
       </div>
 
       {/* Page content  */}
@@ -17,9 +18,7 @@ const HomePage = () => {
         <div className="">
           <ThemeToggle />
         </div>
-        <p className="border border-border p-4 text-muted-foreground">
-          Muted text
-        </p>
+        <p className="border p-4 text-muted-foreground">Muted text</p>
         <ButtonShowcase />
         <DropdownMenuShowcase />
       </div>
