@@ -13,7 +13,7 @@ function MobileNavbar() {
             <GanttChart className="h-6 w-6 lg:hidden" />
             <div className="sr-only">Open side navigation</div>
           </DrawerTrigger>
-          <DrawerContent position="left">
+          <DrawerContent position="left" size="sm">
             <SideNavigation />
           </DrawerContent>
         </Drawer>

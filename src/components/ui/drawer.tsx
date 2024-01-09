@@ -114,7 +114,7 @@ const DrawerVariants = cva(
       {
         position: ["right", "left"],
         size: "sm",
-        class: "w-5/6 sm:w-1/4",
+        class: "w-2/3 sm:w-1/4",
       },
       {
         position: ["right", "left"],

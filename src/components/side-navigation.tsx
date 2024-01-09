@@ -6,7 +6,7 @@ function SideNavigation() {
   const navigate = useNavigate();
 
   return (
-    <div className=" flex h-full w-full flex-col gap-2  px-2 pb-8 pt-8 lg:pt-20">
+    <div className=" flex h-full w-full flex-col gap-2 pb-8 pt-8 lg:pt-20">
       <Button
         variant="ghost"
         className="justify-start"
