@@ -1,4 +1,4 @@
-// https://ui.shadcn.com/docs/components/dropdown-menu
+import { ExternalLink } from "lucide-react";
 
 import {
   Drawer,
@@ -32,6 +32,57 @@ const drawerSizes: ["default", "content", "sm", "lg", "xl", "full"] = [
 function DrawerShowCase() {
   return (
     <div className="px-12 py-6">
+      <div className="mb-8">
+        <div className="flex flex-col items-center sm:flex-row">
+          <span className="">
+            From<span className="hidden sm:inline">:</span>{" "}
+          </span>
+          <a
+            href="https://github.com/shadcn-ui/ui"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-span-3"
+          >
+            <Button variant="link">
+              <span>shadcn/ui</span>
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+        </div>
+        <div className="flex flex-col items-center sm:flex-row">
+          <span className="">
+            Code<span className="hidden sm:inline">:</span>{" "}
+          </span>
+          <a
+            href="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/drawer.tsx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-span-3"
+          >
+            <Button variant="link">
+              <span>mathewbushuru/design-system</span>
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+        </div>
+        <div className="flex flex-col items-center sm:flex-row">
+          <span>
+            Uses<span className="hidden sm:inline">:</span>{" "}
+          </span>
+          <a
+            href="https://www.radix-ui.com/primitives/docs/components/alert-dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-span-3"
+          >
+            <Button variant="link">
+              <span>@radix-ui/react-alert-dialog</span>
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+        </div>
+      </div>
+
       <div className="flex flex-col gap-2 sm:flex-row">
         {drawerPositions.map((position) => (
           <Drawer key={position}>

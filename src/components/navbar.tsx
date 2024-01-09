@@ -6,7 +6,7 @@ import { Drawer, DrawerTrigger, DrawerContent } from "@/components/ui/drawer";
 
 function Navbar() {
   return (
-    <div className="fixed left-0 right-0 top-0 flex w-full items-center justify-between border-b px-4 py-2 backdrop-blur-md">
+    <div className="fixed left-0 right-0 top-0 flex w-full items-center justify-between border-b px-4 py-2 backdrop-blur-md h-14">
       <div className="flex items-center">
         <Drawer>
           <DrawerTrigger>

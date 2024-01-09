@@ -13,6 +13,7 @@ import {
   User,
   UserPlus,
   Users,
+  ExternalLink,
 } from "lucide-react";
 
 import {
@@ -33,8 +34,61 @@ import Button from "@/components/ui/button";
 
 function DropdownMenuShowcase() {
   return (
-    <div className="px-12 py-6">
-      <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">Basic Dropdown Menu</h1>
+    <div className="px-12 py-6 ">
+      <div className="mb-8">
+        <div className="flex flex-col items-center sm:flex-row">
+          <span className="">
+            From<span className="hidden sm:inline">:</span>{" "}
+          </span>
+          <a
+            href="https://github.com/shadcn-ui/ui"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-span-3"
+          >
+            <Button variant="link">
+              <span>shadcn/ui</span>
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+        </div>
+        <div className="flex flex-col items-center sm:flex-row">
+          <span className="">
+            Code<span className="hidden sm:inline">:</span>{" "}
+          </span>
+          <a
+            href="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/dropdown-menu.tsx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-span-3"
+          >
+            <Button variant="link">
+              <span>mathewbushuru/design-system</span>
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+        </div>
+        <div className="flex flex-col items-center sm:flex-row">
+          <span>
+            Uses<span className="hidden sm:inline">:</span>{" "}
+          </span>
+          <a
+            href="https://www.radix-ui.com/primitives/docs/components/dropdown-menu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-span-3"
+          >
+            <Button variant="link">
+              <span>@radix-ui/react-dropdown-menu</span>
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
+        </div>
+      </div>
+
+      <h1 className="my-4 text-left font-semibold text-muted-foreground">
+        Basic Dropdown Menu
+      </h1>
       <DropdownMenu>
         <DropdownMenuTrigger>Open</DropdownMenuTrigger>
         <DropdownMenuContent>
@@ -47,7 +101,7 @@ function DropdownMenuShowcase() {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
+      <h1 className="my-4 text-left font-semibold text-muted-foreground">
         Advanced Dropdown Menu
       </h1>
       <DropdownMenu>
