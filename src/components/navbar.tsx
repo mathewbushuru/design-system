@@ -4,7 +4,7 @@ import ThemeToggle from "@/components/theme-toggle";
 import SideNavigation from "@/components/side-navigation";
 import { Drawer, DrawerTrigger, DrawerContent } from "@/components/ui/drawer";
 
-function MobileNavbar() {
+function Navbar() {
   return (
     <div className="fixed left-0 right-0 top-0 flex w-full items-center justify-between border-b px-4 py-2 backdrop-blur-md">
       <div className="flex items-center">
@@ -17,6 +17,7 @@ function MobileNavbar() {
             <SideNavigation />
           </DrawerContent>
         </Drawer>
+
         <span className="ml-1 font-mono font-semibold tracking-widest lg:ml-2">
           @mathewbushuru
         </span>
@@ -26,4 +27,4 @@ function MobileNavbar() {
   );
 }
 
-export default MobileNavbar;
+export default Navbar;

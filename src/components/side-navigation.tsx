@@ -17,9 +17,16 @@ function SideNavigation() {
       <Button
         variant="ghost"
         className="justify-start"
-        onClick={() => navigate("/showcase")}
+        onClick={() => navigate("/examples")}
       >
-        Showcase
+        Examples
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start"
+        onClick={() => navigate("/components")}
+      >
+        Components
       </Button>
     </div>
   );
