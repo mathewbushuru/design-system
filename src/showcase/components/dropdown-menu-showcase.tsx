@@ -33,8 +33,8 @@ import Button from "@/components/ui/button";
 
 function DropdownMenuShowcase() {
   return (
-    <div className="rounded-md border border-border px-12 py-6">
-      <h1 className="mb-2 mt-4 font-semibold underline">Basic Dropdown Menu</h1>
+    <div className="px-12 py-6">
+      <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">Basic Dropdown Menu</h1>
       <DropdownMenu>
         <DropdownMenuTrigger>Open</DropdownMenuTrigger>
         <DropdownMenuContent>
@@ -47,7 +47,7 @@ function DropdownMenuShowcase() {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <h1 className="mb-2 mt-4 font-semibold underline">
+      <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
         Advanced Dropdown Menu
       </h1>
       <DropdownMenu>

@@ -12,7 +12,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
       {/* Page content  */}
       <div className="flex flex-1 flex-col items-center gap-4 overflow-y-scroll pb-8 pt-20">
         <Navbar />
-        {children}
+        <div>{children}</div>
       </div>
     </div>
   );

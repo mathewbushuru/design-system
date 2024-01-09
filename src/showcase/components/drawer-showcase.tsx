@@ -9,6 +9,7 @@ import {
   DrawerTitle,
   DrawerDescription,
   DrawerAction,
+  DrawerCancel,
 } from "@/components/ui/drawer";
 import Button from "@/components/ui/button";
 
@@ -30,15 +31,12 @@ const drawerSizes: ["default", "content", "sm", "lg", "xl", "full"] = [
 
 function DrawerShowCase() {
   return (
-    <div className="rounded-md border border-border px-12 py-6">
-      <h1 className="mb-4 mt-4 text-center font-semibold underline">
-        All drawer positions
-      </h1>
+    <div className="px-12 py-6">
       <div className="flex flex-col gap-2 sm:flex-row">
         {drawerPositions.map((position) => (
           <Drawer key={position}>
             <DrawerTrigger asChild>
-              <Button>Open {position} drawer</Button>
+              <Button>{position} drawer</Button>
             </DrawerTrigger>
             <DrawerContent position={position}>
               <DrawerHeader>
@@ -49,7 +47,9 @@ function DrawerShowCase() {
               </DrawerHeader>
               <div className="grid gap-4 py-4">Drawer content here</div>
               <DrawerFooter>
-                <Button variant="outline">Cancel</Button>
+                <DrawerCancel asChild>
+                  <Button variant="outline">Cancel</Button>
+                </DrawerCancel>
                 <DrawerAction asChild>
                   <Button>Save changes</Button>
                 </DrawerAction>
@@ -59,19 +59,16 @@ function DrawerShowCase() {
         ))}
       </div>
 
-      <h1 className="mb-4 mt-4 text-center font-semibold underline">
+      <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
         All drawer sizes and positions
       </h1>
       <div className="flex flex-col gap-2">
         {drawerPositions.map((position) => (
-          <div
-            className="flex flex-col flex-wrap justify-center gap-2 sm:flex-row"
-            key={position}
-          >
+          <div className="flex flex-col gap-2 sm:flex-row" key={position}>
             {drawerSizes.map((size) => (
               <Drawer key={size}>
                 <DrawerTrigger asChild>
-                  <Button variant="outline">
+                  <Button variant="outline" className="sm:w-32">
                     {position} {size}
                   </Button>
                 </DrawerTrigger>
@@ -85,7 +82,9 @@ function DrawerShowCase() {
                   </DrawerHeader>
                   <div className="grid gap-4 py-4">Drawer content here</div>
                   <DrawerFooter>
-                    <Button variant="outline">Cancel</Button>
+                    <DrawerCancel asChild>
+                      <Button variant="outline">Cancel</Button>
+                    </DrawerCancel>
                     <DrawerAction asChild>
                       <Button>Save changes</Button>
                     </DrawerAction>
@@ -93,6 +92,7 @@ function DrawerShowCase() {
                 </DrawerContent>
               </Drawer>
             ))}
+            <hr className="-mx-6 my-2 sm:hidden" />
           </div>
         ))}
       </div>

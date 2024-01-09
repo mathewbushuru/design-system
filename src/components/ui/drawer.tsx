@@ -211,6 +211,22 @@ const DrawerAction = React.forwardRef<
   );
 });
 
+const DrawerCancel = React.forwardRef<
+  React.ElementRef<typeof DrawerPrimitive.Cancel>,
+  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Cancel>
+>(({ className, ...props }, ref) => {
+  return (
+    <DrawerPrimitive.Cancel
+      ref={ref}
+      className={cn(
+        "flex flex-col-reverse items-stretch sm:flex-row sm:items-center sm:justify-end sm:space-x-2",
+        className,
+      )}
+      {...props}
+    />
+  );
+});
+
 const DrawerTitle = React.forwardRef<
   React.ElementRef<typeof DrawerPrimitive.Title>,
   React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Title>
@@ -244,6 +260,7 @@ export {
   DrawerHeader,
   DrawerFooter,
   DrawerAction,
+  DrawerCancel,
   DrawerTitle,
   DrawerDescription,
 };

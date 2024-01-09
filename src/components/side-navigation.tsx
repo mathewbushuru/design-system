@@ -14,6 +14,7 @@ function SideNavigation() {
       >
         Home
       </Button>
+
       <Button
         variant="ghost"
         className="justify-start"
@@ -21,12 +22,35 @@ function SideNavigation() {
       >
         Examples
       </Button>
+
+      {/* Components  */}
       <Button
         variant="ghost"
         className="justify-start"
         onClick={() => navigate("/components")}
       >
         Components
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+        onClick={() => navigate("/components/button")}
+      >
+        Button
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+        onClick={() => navigate("/components/drawer")}
+      >
+        Drawer
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+        onClick={() => navigate("/components/dropdown-menu")}
+      >
+        Dropdown Menu
       </Button>
     </div>
   );

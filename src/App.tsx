@@ -1,26 +1,59 @@
-import { createBrowserRouter,RouterProvider, Navigate } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 
 import ThemeProvider from "@/components/theme-provider";
+import RootLayout from "@/components/root-layout";
 
 import HomePage from "@/pages/home-page";
 import ComponentsPage from "@/pages/components-page";
 import ExamplesPage from "@/pages/examples-page";
 
+import ButtonShowcase from "@/showcase/components/button-showcase";
+import DrawerShowCase from "@/showcase/components/drawer-showcase";
+import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";
+
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <HomePage />,
-      errorElement: <Navigate to="/" />
-    },
-    {
-      path: "/examples",
-      element: <ExamplesPage />
-    },
-    {
-      path: "/components",
-      element: <ComponentsPage />
-    }
-])
+  {
+    path: "/",
+    element: <HomePage />,
+    errorElement: <Navigate to="/" />,
+  },
+  {
+    path: "/examples",
+    element: <ExamplesPage />,
+  },
+  {
+    path: "/components",
+    element: <ComponentsPage />,
+  },
+  {
+    path: "/components/button",
+    element: (
+      <RootLayout>
+        <ButtonShowcase />
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/components/drawer",
+    element: (
+      <RootLayout>
+        <DrawerShowCase />
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/components/dropdown-menu",
+    element: (
+      <RootLayout>
+        <DropdownMenuShowcase />
+      </RootLayout>
+    ),
+  },
+]);
 
 function App() {
   return (
