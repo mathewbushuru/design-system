@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <RootLayout>
       <div>
-        Home
+        Home - Carousel of example projects
       </div>
     </RootLayout>
   );
