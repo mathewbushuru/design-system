@@ -12,6 +12,7 @@ import ComponentsPage from "@/pages/components-page";
 import ExamplesPage from "@/pages/examples-page";
 
 import ButtonShowcase from "@/showcase/components/button-showcase";
+import InputShowcase from "./showcase/components/input-showcase";
 import DrawerShowCase from "@/showcase/components/drawer-showcase";
 import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";
 
@@ -34,6 +35,14 @@ const router = createBrowserRouter([
     element: (
       <RootLayout>
         <ButtonShowcase />
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/components/input",
+    element: (
+      <RootLayout>
+        <InputShowcase />
       </RootLayout>
     ),
   },

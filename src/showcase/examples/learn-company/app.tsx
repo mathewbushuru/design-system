@@ -12,7 +12,7 @@ function LearnCompany() {
         {/* Navbar left  */}
         <div className="flex flex-1 items-center justify-between lg:justify-start lg:gap-4">
           <Menu className="h-6 w-6 stroke-1 text-muted-foreground lg:hidden" />
-          <span className="text-lg font-bold tracking-widest text-primary">
+          <span className="text-lg font-bold tracking-widest text-primary text-pointer">
             learn company
           </span>
           <Button size="sm" className="hidden lg:block">Explore</Button>
