@@ -3,6 +3,7 @@
 import { Menu, Search } from "lucide-react";
 
 import Button from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 function LearnCompany() {
   return (
@@ -16,6 +17,7 @@ function LearnCompany() {
             learn company
           </span>
           <Button size="sm" className="hidden lg:block">Explore</Button>
+          <Input className="hidden lg:block max-w-60" type="search" placeholder="What do you want to learn?"/>
           <Search className="h-6 w-6 stroke-1 text-muted-foreground lg:hidden" />
         </div>
 
