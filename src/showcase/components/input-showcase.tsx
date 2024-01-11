@@ -6,6 +6,10 @@ import { Input } from "@/components/ui/input";
 export default function InputShowcase() {
   return (
     <div className="px-12 py-6">
+      <h1 className="my-2 text-center text-lg font-semibold underline sm:text-left">
+        Input
+      </h1>
+
       <div className="mb-8">
         <div className="flex flex-col items-center sm:flex-row">
           <span className="">

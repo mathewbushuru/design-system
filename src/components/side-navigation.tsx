@@ -41,13 +41,6 @@ function SideNavigation() {
       <Button
         variant="ghost"
         className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/components/input")}
-      >
-        Input
-      </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
         onClick={() => navigate("/components/drawer")}
       >
         Drawer
@@ -58,6 +51,13 @@ function SideNavigation() {
         onClick={() => navigate("/components/dropdown-menu")}
       >
         Dropdown Menu
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+        onClick={() => navigate("/components/input")}
+      >
+        Input
       </Button>
     </div>
   );

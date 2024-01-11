@@ -32,6 +32,10 @@ const drawerSizes: ["default", "content", "sm", "lg", "xl", "full"] = [
 function DrawerShowCase() {
   return (
     <div className="px-12 py-6">
+      <h1 className="my-2 text-center text-lg font-semibold underline sm:text-left">
+        Drawer
+      </h1>
+
       <div className="mb-8">
         <div className="flex flex-col items-center sm:flex-row">
           <span className="">
