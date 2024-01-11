@@ -1,49 +1,14 @@
 // inpired by coursera - https://www.coursera.org/
 
-import { Menu, Search } from "lucide-react";
-
-import Button from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import LearnNavbar from "@/showcase/examples/learn-company/components/learn-navbar";
 
 function LearnCompany() {
   return (
-    <div className="">
-      {/* Learn Co Navbar */}
-      <div className="flex items-center border-b px-3 py-4 lg:px-4">
-        {/* Navbar left  */}
-        <div className="flex flex-1 items-center justify-between lg:justify-start lg:gap-4">
-          <Menu className="h-6 w-6 stroke-1 text-muted-foreground lg:hidden" />
-          <span className="text-lg font-bold tracking-widest text-primary text-pointer">
-            learn company
-          </span>
-          <Button size="sm" className="hidden lg:block">Explore</Button>
-          <Input className="hidden lg:block max-w-60" type="search" placeholder="What do you want to learn?"/>
-          <Search className="h-6 w-6 stroke-1 text-muted-foreground lg:hidden" />
-        </div>
-
-        {/* Navbar Right  */}
-        <div className="hidden lg:block">
-          <Button
-            variant="link"
-            className="font-medium text-foreground hover:text-link"
-          >
-            Online degrees
-          </Button>
-          <Button
-            variant="link"
-            className="font-medium text-foreground hover:text-link"
-          >
-            Find your new career
-          </Button>
-          <Button variant="link" className="font-medium ">
-            Log in
-          </Button>
-          <Button size="sm">Join for free</Button>
-        </div>
-      </div>
+    <div className="bg-popover">
+      <LearnNavbar />
 
       {/* Learn Co  body  */}
-      <div className="m-4 h-10">Body</div>
+      <div className="p-4 h-20">Body</div>
     </div>
   );
 }

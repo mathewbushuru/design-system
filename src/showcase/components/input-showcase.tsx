@@ -12,8 +12,8 @@ export default function InputShowcase() {
 
       <div className="mb-8">
         <div className="flex flex-col items-center sm:flex-row">
-          <span className="">
-            From<span className="hidden sm:inline">:</span>{" "}
+          <span className="w-12 font-semibold text-sm">
+            From<span className="hidden sm:inline">:</span>
           </span>
           <a
             href="https://github.com/shadcn-ui/ui"
@@ -21,15 +21,15 @@ export default function InputShowcase() {
             rel="noopener noreferrer"
             className="col-span-3"
           >
-            <Button variant="link">
+            <Button variant="link" size="sm">
               <span>shadcn/ui</span>
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
           </a>
         </div>
         <div className="flex flex-col items-center sm:flex-row">
-          <span className="">
-            Code<span className="hidden sm:inline">:</span>{" "}
+          <span className="w-12 font-semibold text-sm">
+            Code<span className="hidden sm:inline">:</span>
           </span>
           <a
             href="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/input.tsx"
@@ -37,15 +37,15 @@ export default function InputShowcase() {
             rel="noopener noreferrer"
             className="col-span-3"
           >
-            <Button variant="link">
+            <Button variant="link" size="sm">
               <span>mathewbushuru/design-system</span>
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
           </a>
         </div>
         <div className="flex flex-col items-center sm:flex-row">
-          <span>
-            Uses<span className="hidden sm:inline">:</span>{" "}
+          <span className="w-12 font-semibold text-sm">
+            Uses<span className="hidden sm:inline">:</span>
           </span>
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
@@ -53,7 +53,7 @@ export default function InputShowcase() {
             rel="noopener noreferrer"
             className="col-span-3"
           >
-            <Button variant="link">
+            <Button variant="link" size="sm">
               <span>HTML Input Element</span>
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>

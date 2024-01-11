@@ -15,12 +15,20 @@ function SideNavigation() {
         Home
       </Button>
 
+      {/* Examples  */}
       <Button
         variant="ghost"
         className="justify-start"
         onClick={() => navigate("/examples")}
       >
         Examples
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+        onClick={() => navigate("/examples/learn-company")}
+      >
+        Learn Company
       </Button>
 
       {/* Components  */}

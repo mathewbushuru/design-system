@@ -11,6 +11,8 @@ import HomePage from "@/pages/home-page";
 import ComponentsPage from "@/pages/components-page";
 import ExamplesPage from "@/pages/examples-page";
 
+import LearnCompany from "./showcase/examples/learn-company/app";
+
 import ButtonShowcase from "@/showcase/components/button-showcase";
 import InputShowcase from "./showcase/components/input-showcase";
 import DrawerShowCase from "@/showcase/components/drawer-showcase";
@@ -25,6 +27,16 @@ const router = createBrowserRouter([
   {
     path: "/examples",
     element: <ExamplesPage />,
+  },
+  {
+    path: "/examples/learn-company",
+    element: (
+      <RootLayout>
+        <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
+          <LearnCompany />
+        </div>
+      </RootLayout>
+    ),
   },
   {
     path: "/components",
