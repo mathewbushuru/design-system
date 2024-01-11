@@ -5,7 +5,7 @@ import {
 } from "react-router-dom";
 
 import ThemeProvider from "@/components/theme-provider";
-import RootLayout from "@/components/root-layout";
+import RootLayout from "@/layouts/root-layout";
 
 import HomePage from "@/pages/home-page";
 import ComponentsPage from "@/pages/components-page";

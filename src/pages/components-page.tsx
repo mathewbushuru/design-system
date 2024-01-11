@@ -1,4 +1,4 @@
-import RootLayout from "@/components/root-layout";
+import RootLayout from "@/layouts/root-layout";
 
 import ButtonShowcase from "@/showcase/components/button-showcase";
 import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";

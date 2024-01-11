@@ -1,4 +1,4 @@
-import { ExternalLink } from "lucide-react";
+import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
 
 import {
   Drawer,
@@ -31,62 +31,15 @@ const drawerSizes: ["default", "content", "sm", "lg", "xl", "full"] = [
 
 function DrawerShowCase() {
   return (
-    <div className="px-12 py-6">
-      <h1 className="my-2 text-center text-lg font-semibold underline sm:text-left">
-        Drawer
-      </h1>
-
-      <div className="mb-8">
-        <div className="flex flex-col items-center sm:flex-row">
-          <span className="w-12 font-semibold text-sm">
-            From<span className="hidden sm:inline">:</span>
-          </span>
-          <a
-            href="https://github.com/shadcn-ui/ui"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>shadcn/ui</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-        <div className="flex flex-col items-center sm:flex-row">
-          <span className="w-12 font-semibold text-sm">
-            Code<span className="hidden sm:inline">:</span>
-          </span>
-          <a
-            href="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/drawer.tsx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>mathewbushuru/design-system</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-        <div className="flex flex-col items-center sm:flex-row">
-          <span className="w-12 font-semibold text-sm">
-            Uses<span className="hidden sm:inline">:</span>
-          </span>
-          <a
-            href="https://www.radix-ui.com/primitives/docs/components/alert-dialog"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>@radix-ui/react-alert-dialog</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-      </div>
-
+    <ComponentShowcaseLayout
+      componentName="Drawer"
+      from="shadcn/ui"
+      fromLink="https://github.com/shadcn-ui/ui"
+      code="mathewbushuru/design-system"
+      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/drawer.tsx"
+      uses="@radix-ui/react-alert-dialog"
+      usesLink="https://www.radix-ui.com/primitives/docs/components/alert-dialog"
+    >
       <div className="flex flex-col gap-2 sm:flex-row">
         {drawerPositions.map((position) => (
           <Drawer key={position}>
@@ -151,7 +104,7 @@ function DrawerShowCase() {
           </div>
         ))}
       </div>
-    </div>
+    </ComponentShowcaseLayout>
   );
 }
 

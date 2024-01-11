@@ -1,65 +1,19 @@
-import { Heart, ExternalLink } from "lucide-react";
+import { Heart } from "lucide-react";
 
+import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
 import Button from "@/components/ui/button";
 
 export default function ButtonShowcase() {
   return (
-    <div className="px-12 py-6">
-      <h1 className="my-2 text-center text-lg font-semibold underline sm:text-left">
-        Button
-      </h1>
-
-      <div className="mb-8">
-        <div className="flex flex-col items-center sm:flex-row">
-          <span className="w-12 font-semibold text-sm">
-            From<span className="hidden sm:inline">:</span>
-          </span>
-          <a
-            href="https://github.com/shadcn-ui/ui"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>shadcn/ui</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-        <div className="flex flex-col items-center sm:flex-row">
-          <span className="w-12 font-semibold text-sm">
-            Code<span className="hidden sm:inline">:</span>
-          </span>
-          <a
-            href="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/button.tsx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>mathewbushuru/design-system</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-        <div className="flex flex-col items-center sm:flex-row">
-          <span className="w-12 font-semibold text-sm">
-            Uses<span className="hidden sm:inline">:</span>
-          </span>
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>HTML Button Element</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
-      </div>
-
+    <ComponentShowcaseLayout
+      componentName="Button"
+      from="shadcn/ui"
+      fromLink="https://github.com/shadcn-ui/ui"
+      code="mathewbushuru/design-system"
+      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/button.tsx"
+      uses="HTML Button Element"
+      usesLink="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
+    >
       <div className="flex flex-col gap-2 sm:flex-row">
         <Button>Default button</Button>
         <Button disabled>Disabled button</Button>
@@ -92,6 +46,6 @@ export default function ButtonShowcase() {
           <Heart className="h-4 w-4" />
         </Button>
       </div>
-    </div>
+    </ComponentShowcaseLayout>
   );
 }

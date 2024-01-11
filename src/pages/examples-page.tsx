@@ -1,7 +1,7 @@
 import { ExternalLink } from "lucide-react";
 
+import RootLayout from "@/layouts/root-layout";
 import LearnCompany from "@/showcase/examples/learn-company/app";
-import RootLayout from "@/components/root-layout";
 import Button from "@/components/ui/button";
 
 function ExamplesPage() {
