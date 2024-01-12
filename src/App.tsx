@@ -11,7 +11,7 @@ import HomePage from "@/pages/home-page";
 import ComponentsPage from "@/pages/components-page";
 import ExamplesPage from "@/pages/examples-page";
 
-import LearnCompany from "./showcase/examples/learn-company/app";
+import LearnCompany from "@/examples/learn-company/app";
 
 import ButtonShowcase from "@/showcase/components/button-showcase";
 import InputShowcase from "./showcase/components/input-showcase";

@@ -1,6 +1,6 @@
 // inpired by coursera - https://www.coursera.org/
 
-import LearnNavbar from "@/showcase/examples/learn-company/components/learn-navbar";
+import LearnNavbar from "@/examples/learn-company/components/learn-navbar";
 
 function LearnCompany() {
   return (
