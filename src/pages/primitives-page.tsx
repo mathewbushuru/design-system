@@ -5,7 +5,7 @@ import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";
 import DrawerShowCase from "@/showcase/components/drawer-showcase";
 import InputShowcase from "@/showcase/components/input-showcase";
 
-const ComponentsPage = () => {
+const PrimitivesPage = () => {
   return (
     <RootLayout>
       <div>
@@ -25,4 +25,4 @@ const ComponentsPage = () => {
   );
 };
 
-export default ComponentsPage;
+export default PrimitivesPage;

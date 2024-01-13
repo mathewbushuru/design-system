@@ -8,7 +8,8 @@ import ThemeProvider from "@/components/theme-provider";
 import RootLayout from "@/layouts/root-layout";
 
 import HomePage from "@/pages/home-page";
-import ComponentsPage from "@/pages/components-page";
+import CompositesPage from "@/pages/composites-page";
+import PrimitivesPage from "@/pages/primitives-page";
 import ExamplesPage from "@/pages/examples-page";
 
 import LearnCompany from "@/examples/learn-company/app";
@@ -39,11 +40,11 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/components",
-    element: <ComponentsPage />,
+    path: "/composites",
+    element: <CompositesPage />,
   },
   {
-    path: "/components/button",
+    path: "/primitives/button",
     element: (
       <RootLayout>
         <ButtonShowcase />
@@ -51,7 +52,19 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/components/input",
+    path: "/primitives",
+    element: <PrimitivesPage />,
+  },
+  {
+    path: "/primitives/button",
+    element: (
+      <RootLayout>
+        <ButtonShowcase />
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/primitives/input",
     element: (
       <RootLayout>
         <InputShowcase />
@@ -59,7 +72,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/components/drawer",
+    path: "/primitives/drawer",
     element: (
       <RootLayout>
         <DrawerShowCase />
@@ -67,7 +80,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/components/dropdown-menu",
+    path: "/primitives/dropdown-menu",
     element: (
       <RootLayout>
         <DropdownMenuShowcase />

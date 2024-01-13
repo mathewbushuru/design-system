@@ -31,39 +31,55 @@ function SideNavigation() {
         Learn Company
       </Button>
 
-      {/* Components  */}
+      {/* Component Composites  */}
       <Button
         variant="ghost"
         className="justify-start"
-        onClick={() => navigate("/components")}
+        onClick={() => navigate("/composites")}
       >
-        Components
+        Component Composites
       </Button>
       <Button
         variant="ghost"
         className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/components/button")}
+        onClick={() => navigate("/composites/button")}
+      >
+        Button
+      </Button>
+
+      {/* Component Primitives  */}
+      <Button
+        variant="ghost"
+        className="justify-start"
+        onClick={() => navigate("/primitives")}
+      >
+        Component Primitives
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+        onClick={() => navigate("/primitives/button")}
       >
         Button
       </Button>
       <Button
         variant="ghost"
         className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/components/drawer")}
+        onClick={() => navigate("/primitives/drawer")}
       >
         Drawer
       </Button>
       <Button
         variant="ghost"
         className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/components/dropdown-menu")}
+        onClick={() => navigate("/primitives/dropdown-menu")}
       >
         Dropdown Menu
       </Button>
       <Button
         variant="ghost"
         className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/components/input")}
+        onClick={() => navigate("/primitives/input")}
       >
         Input
       </Button>
