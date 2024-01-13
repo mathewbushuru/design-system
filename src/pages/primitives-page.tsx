@@ -1,9 +1,9 @@
 import RootLayout from "@/layouts/root-layout";
 
-import ButtonShowcase from "@/showcase/components/button-showcase";
-import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";
-import DrawerShowCase from "@/showcase/components/drawer-showcase";
-import InputShowcase from "@/showcase/components/input-showcase";
+import ButtonShowcase from "@/showcase/primitives/button-showcase";
+import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
+import DrawerShowCase from "@/showcase/primitives/drawer-showcase";
+import InputShowcase from "@/showcase/primitives/input-showcase";
 
 const PrimitivesPage = () => {
   return (

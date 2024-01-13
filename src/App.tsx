@@ -14,10 +14,12 @@ import ExamplesPage from "@/pages/examples-page";
 
 import LearnCompany from "@/examples/learn-company/app";
 
-import ButtonShowcase from "@/showcase/components/button-showcase";
-import InputShowcase from "./showcase/components/input-showcase";
-import DrawerShowCase from "@/showcase/components/drawer-showcase";
-import DropdownMenuShowcase from "@/showcase/components/dropdown-menu-showcase";
+import IconedInputShowcase from "@/showcase/composites/iconed-input-showcase";
+
+import ButtonShowcase from "@/showcase/primitives/button-showcase";
+import InputShowcase from "@/showcase/primitives/input-showcase";
+import DrawerShowCase from "@/showcase/primitives/drawer-showcase";
+import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
 
 const router = createBrowserRouter([
   {
@@ -44,10 +46,10 @@ const router = createBrowserRouter([
     element: <CompositesPage />,
   },
   {
-    path: "/primitives/button",
+    path: "/composites/iconed-input",
     element: (
       <RootLayout>
-        <ButtonShowcase />
+        <IconedInputShowcase />
       </RootLayout>
     ),
   },
