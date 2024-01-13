@@ -3,7 +3,7 @@ import { Menu, Search } from "lucide-react";
 import Button from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-export default function LearnNavbar() {
+export default function Navbar() {
   return (
     <div className="flex items-center border-b px-3 py-4 lg:px-5">
       {/* Navbar left  */}

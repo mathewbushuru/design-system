@@ -78,7 +78,7 @@ export default function ExampleShowcaseLayout({
         </div>
       </div>
 
-      {children}
+      <div className="overflow-hidden rounded-md shadow-lg dark:border">{children}</div>
     </div>
   );
 }
