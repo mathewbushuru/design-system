@@ -1,6 +1,6 @@
 import { ExternalLink } from "lucide-react";
 
-import Button from "@/components/ui/button";
+import Button from "@/components/primitives/button";
 
 export default function ExampleShowcaseLayout({
   exampleName,

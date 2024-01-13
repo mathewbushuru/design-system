@@ -1,5 +1,5 @@
 import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
-import { Input } from "@/components/ui/input";
+import { Input } from "@/components/primitives/input";
 
 export default function InputShowcase() {
   return (

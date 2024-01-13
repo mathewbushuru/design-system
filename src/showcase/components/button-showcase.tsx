@@ -1,7 +1,7 @@
 import { Heart } from "lucide-react";
 
 import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
-import Button from "@/components/ui/button";
+import Button from "@/components/primitives/button";
 
 export default function ButtonShowcase() {
   return (

@@ -2,7 +2,7 @@ import { GanttChart } from "lucide-react";
 
 import ThemeToggle from "@/components/theme-toggle";
 import SideNavigation from "@/components/side-navigation";
-import { Drawer, DrawerTrigger, DrawerContent } from "@/components/ui/drawer";
+import { Drawer, DrawerTrigger, DrawerContent } from "@/components/primitives/drawer";
 
 function Navbar() {
   return (

@@ -1,7 +1,7 @@
 import { Menu, Search } from "lucide-react";
 
-import Button from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import Button from "@/components/primitives/button";
+import { Input } from "@/components/primitives/input";
 
 export default function Navbar() {
   return (

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import Button from "@/components/ui/button";
+import Button from "@/components/primitives/button";
 
 function SideNavigation() {
   const navigate = useNavigate();

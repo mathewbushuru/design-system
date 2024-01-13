@@ -10,8 +10,8 @@ import {
   DrawerDescription,
   DrawerAction,
   DrawerCancel,
-} from "@/components/ui/drawer";
-import Button from "@/components/ui/button";
+} from "@/components/primitives/drawer";
+import Button from "@/components/primitives/button";
 
 const drawerPositions: ["right", "left", "top", "bottom"] = [
   "right",
