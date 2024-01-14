@@ -10,7 +10,7 @@ function LearnCompanyShowcase() {
         design="coursera.org"
         designLink="https://www.coursera.org/"
         code="mathewbushuru/design-system"
-        codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/examples/learn-company"
+        codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/examples/learn-company/app.tsx"
       >
         <LearnCompany />
       </ShowcaseLayout>
