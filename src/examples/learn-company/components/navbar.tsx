@@ -3,6 +3,8 @@ import { Menu, Search } from "lucide-react";
 import Button from "@/components/primitives/button";
 import ButtonedInput from "@/components/composites/buttoned-input";
 
+import ExploreButton from "@/examples/learn-company/components/explore-button"
+
 export default function Navbar() {
   return (
     <div className="flex items-center border-b px-3 py-4 lg:px-5">
@@ -12,9 +14,7 @@ export default function Navbar() {
         <span className="text-pointer text-lg font-bold tracking-widest text-primary">
           learn company
         </span>
-        <Button size="sm" className="hidden lg:block">
-          Explore
-        </Button>
+        <ExploreButton />
         <ButtonedInput
           action={Search}
           placeholder="What do you want to learn?"
