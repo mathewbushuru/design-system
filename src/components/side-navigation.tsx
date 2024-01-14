@@ -65,6 +65,13 @@ function SideNavigation() {
       <Button
         variant="ghost"
         className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+        onClick={() => navigate("/primitives/card")}
+      >
+        Card
+      </Button>
+      <Button
+        variant="ghost"
+        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
         onClick={() => navigate("/primitives/drawer")}
       >
         Drawer

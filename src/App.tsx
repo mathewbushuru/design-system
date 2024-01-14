@@ -17,6 +17,7 @@ import LearnCompany from "@/examples/learn-company/app";
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
 
 import ButtonShowcase from "@/showcase/primitives/button-showcase";
+import CardShowcase from "@/showcase/primitives/card-showcase";
 import InputShowcase from "@/showcase/primitives/input-showcase";
 import DrawerShowCase from "@/showcase/primitives/drawer-showcase";
 import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
@@ -62,6 +63,14 @@ const router = createBrowserRouter([
     element: (
       <RootLayout>
         <ButtonShowcase />
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/primitives/card",
+    element: (
+      <RootLayout>
+        <CardShowcase />
       </RootLayout>
     ),
   },
