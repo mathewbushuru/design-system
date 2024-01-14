@@ -18,7 +18,7 @@ export default function ComponentShowcaseLayout({
   code: string;
   codeLink: string;
   uses: string;
-  usesLink: string;
+  usesLink: string | null;
   children: React.ReactNode;
 }) {
   return (
@@ -64,17 +64,19 @@ export default function ComponentShowcaseLayout({
           <span className="w-12 text-sm font-semibold">
             Uses<span className="hidden sm:inline">:</span>
           </span>
-          <a
-            href={usesLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>{uses}</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
+          {
+           usesLink ? <a
+              href={usesLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-span-3"
+            >
+              <Button variant="link" size="sm">
+                <span>{uses}</span>
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </Button>
+            </a> : <span className="text-link text-sm font-semibold h-9 px-3 inline-flex items-center">{uses}</span>
+          }
         </div>
       </div>
 

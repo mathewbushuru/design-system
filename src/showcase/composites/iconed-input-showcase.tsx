@@ -1,22 +1,31 @@
+import { Search } from "lucide-react";
+
 import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
-import { Input } from "@/components/primitives/input";
+import IconedInput from "@/components/composites/iconed-input";
 
 export default function IconedInputShowcase() {
   return (
     <ComponentShowcaseLayout
       componentName="Iconed Input"
-      from="shadcn/ui"
-      fromLink="https://github.com/shadcn-ui/ui"
+      from="mathewbushuru/design-system"
+      fromLink="https://github.com/mathewbushuru/design-system"
       code="mathewbushuru/design-system"
-      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/input.tsx"
-      uses="HTML Input Element"
-      usesLink="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/composites/iconed-input.tsx"
+      uses="Input primitive, Button primitive"
+      usesLink={null}
     >
       <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
-        Default input
+        Default IconedInput with Icon
       </h1>
       <div className="sm:max-w-md">
-        <Input />
+       <IconedInput action={Search}/>
+      </div>
+
+      <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
+        Default IconedInput with Text
+      </h1>
+      <div className="sm:max-w-md">
+       <IconedInput action="Search"/>
       </div>
 
     </ComponentShowcaseLayout>
