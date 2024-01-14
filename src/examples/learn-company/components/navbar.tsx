@@ -1,7 +1,7 @@
 import { Menu, Search } from "lucide-react";
 
 import Button from "@/components/primitives/button";
-import { Input } from "@/components/primitives/input";
+import ButtonedInput from "@/components/composites/buttoned-input";
 
 export default function Navbar() {
   return (
@@ -15,10 +15,11 @@ export default function Navbar() {
         <Button size="sm" className="hidden lg:block">
           Explore
         </Button>
-        <Input
-          className="hidden max-w-60 lg:block bg-popover"
-          type="search"
+        <ButtonedInput
+          action={Search}
           placeholder="What do you want to learn?"
+          className="hidden lg:flex flex-1 max-w-64"
+          inputStyles="bg-popover"
         />
         <Search className="h-6 w-6 stroke-1 text-muted-foreground lg:hidden" />
       </div>

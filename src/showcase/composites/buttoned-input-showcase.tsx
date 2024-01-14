@@ -1,4 +1,4 @@
-import { Search } from "lucide-react";
+import { PhoneOutgoing } from "lucide-react";
 
 import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
 import ButtonedInput from "@/components/composites/buttoned-input";
@@ -15,14 +15,14 @@ export default function ButtonedInputShowcase() {
       usesLink={null}
     >
       <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
-        Default IconedInput with Icon
+        Default ButtonedInput with Icon
       </h1>
       <div className="sm:max-w-md">
-       <ButtonedInput action={Search}/>
+       <ButtonedInput action={PhoneOutgoing}/>
       </div>
 
       <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
-        Default IconedInput with Text
+        Default ButtonedInput with Text
       </h1>
       <div className="sm:max-w-md">
        <ButtonedInput action="Search"/>
