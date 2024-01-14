@@ -1,5 +1,5 @@
-import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
-
+import ShowcaseLayout from "@/layouts/showcase-layout";
+import Button from "@/components/primitives/button";
 import {
   Drawer,
   DrawerTrigger,
@@ -11,7 +11,6 @@ import {
   DrawerAction,
   DrawerCancel,
 } from "@/components/primitives/drawer";
-import Button from "@/components/primitives/button";
 
 const drawerPositions: ["right", "left", "top", "bottom"] = [
   "right",
@@ -31,8 +30,8 @@ const drawerSizes: ["default", "content", "sm", "lg", "xl", "full"] = [
 
 function DrawerShowCase() {
   return (
-    <ComponentShowcaseLayout
-      componentName="Drawer"
+    <ShowcaseLayout
+      name="Drawer"
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
@@ -104,7 +103,7 @@ function DrawerShowCase() {
           </div>
         ))}
       </div>
-    </ComponentShowcaseLayout>
+    </ShowcaseLayout>
   );
 }
 

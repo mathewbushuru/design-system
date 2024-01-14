@@ -1,10 +1,10 @@
-import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
+import ShowcaseLayout from "@/layouts/showcase-layout";
 import { Input } from "@/components/primitives/input";
 
 export default function InputShowcase() {
   return (
-    <ComponentShowcaseLayout
-      componentName="Input"
+    <ShowcaseLayout
+      name="Input"
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
@@ -39,6 +39,6 @@ export default function InputShowcase() {
       <div className="sm:max-w-md">
         <Input placeholder="Type something..." />
       </div>
-    </ComponentShowcaseLayout>
+    </ShowcaseLayout>
   );
 }

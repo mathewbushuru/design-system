@@ -1,12 +1,12 @@
 import { Heart } from "lucide-react";
 
-import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
+import ShowcaseLayout from "@/layouts/showcase-layout";
 import Button from "@/components/primitives/button";
 
 export default function ButtonShowcase() {
   return (
-    <ComponentShowcaseLayout
-      componentName="Button"
+    <ShowcaseLayout
+      name="Button"
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
@@ -46,6 +46,6 @@ export default function ButtonShowcase() {
           <Heart className="h-4 w-4" />
         </Button>
       </div>
-    </ComponentShowcaseLayout>
+    </ShowcaseLayout>
   );
 }

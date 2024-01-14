@@ -15,7 +15,8 @@ import {
   Users,
 } from "lucide-react";
 
-import ComponentShowcaseLayout from "@/layouts/component-showcase-layout";
+import ShowcaseLayout from "@/layouts/showcase-layout";
+import Button from "@/components/primitives/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,12 +31,11 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
 } from "@/components/primitives/dropdown-menu";
-import Button from "@/components/primitives/button";
 
 function DropdownMenuShowcase() {
   return (
-    <ComponentShowcaseLayout
-      componentName="Dropdown Menu"
+    <ShowcaseLayout
+      name="Dropdown Menu"
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
@@ -154,7 +154,7 @@ function DropdownMenuShowcase() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-    </ComponentShowcaseLayout>
+    </ShowcaseLayout>
   );
 }
 
