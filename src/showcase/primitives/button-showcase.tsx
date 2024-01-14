@@ -10,7 +10,7 @@ export default function ButtonShowcase() {
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
-      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/button.tsx"
+      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/primitives/button.tsx"
       uses="HTML Button Element"
       usesLink="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button"
     >

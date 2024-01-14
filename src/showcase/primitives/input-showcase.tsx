@@ -8,7 +8,7 @@ export default function InputShowcase() {
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
-      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/input.tsx"
+      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/primitives/input.tsx"
       uses="HTML Input Element"
       usesLink="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
     >

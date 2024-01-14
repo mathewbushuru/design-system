@@ -39,7 +39,7 @@ function DropdownMenuShowcase() {
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
-      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/dropdown-menu.tsx"
+      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/primitives/dropdown-menu.tsx"
       uses="@radix-ui/react-dropdown-menu"
       usesLink="https://www.radix-ui.com/primitives/docs/components/dropdown-menu"
     >

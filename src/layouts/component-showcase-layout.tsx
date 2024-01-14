@@ -13,8 +13,8 @@ export default function ComponentShowcaseLayout({
   children,
 }: {
   componentName: string;
-  from: string;
-  fromLink: string;
+  from: string | null;
+  fromLink: string | null;
   code: string;
   codeLink: string;
   uses: string;
@@ -28,22 +28,24 @@ export default function ComponentShowcaseLayout({
       </h1>
 
       <div className="mb-8">
-        <div className="flex flex-col items-center sm:flex-row">
-          <span className="w-12 text-sm font-semibold">
-            From<span className="hidden sm:inline">:</span>
-          </span>
-          <a
-            href={fromLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-span-3"
-          >
-            <Button variant="link" size="sm">
-              <span>{from}</span>
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </Button>
-          </a>
-        </div>
+        {from && fromLink && (
+          <div className="flex flex-col items-center sm:flex-row">
+            <span className="w-12 text-sm font-semibold">
+              From<span className="hidden sm:inline">:</span>
+            </span>
+            <a
+              href={fromLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="col-span-3"
+            >
+              <Button variant="link" size="sm">
+                <span>{from}</span>
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
+          </div>
+        )}
         <div className="flex flex-col items-center sm:flex-row">
           <span className="w-12 text-sm font-semibold">
             Code<span className="hidden sm:inline">:</span>
@@ -64,8 +66,8 @@ export default function ComponentShowcaseLayout({
           <span className="w-12 text-sm font-semibold">
             Uses<span className="hidden sm:inline">:</span>
           </span>
-          {
-           usesLink ? <a
+          {usesLink ? (
+            <a
               href={usesLink}
               target="_blank"
               rel="noopener noreferrer"
@@ -75,8 +77,12 @@ export default function ComponentShowcaseLayout({
                 <span>{uses}</span>
                 <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
-            </a> : <span className="text-link text-sm font-semibold h-9 px-3 inline-flex items-center">{uses}</span>
-          }
+            </a>
+          ) : (
+            <span className="inline-flex h-9 items-center px-3 text-sm font-semibold text-link">
+              {uses}
+            </span>
+          )}
         </div>
       </div>
 

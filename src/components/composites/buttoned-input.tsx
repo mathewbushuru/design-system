@@ -7,7 +7,7 @@ interface IconedInputProps extends React.HTMLAttributes<HTMLDivElement> {
   action: LucideIcon | string;
 }
 
-export default function IconedInput({ action }: IconedInputProps) {
+export default function ButtonedInput({ action }: IconedInputProps) {
   const Action = action;
   return (
     <div className="flex">

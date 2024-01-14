@@ -42,9 +42,9 @@ function SideNavigation() {
       <Button
         variant="ghost"
         className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/composites/iconed-input")}
+        onClick={() => navigate("/composites/buttoned-input")}
       >
-        Iconed Input
+        Buttoned Input
       </Button>
 
       {/* Component Primitives  */}

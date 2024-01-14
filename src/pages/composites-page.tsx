@@ -1,11 +1,11 @@
 import RootLayout from "@/layouts/root-layout";
-import IconedInputShowcase from "@/showcase/composites/iconed-input-showcase";
+import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
 
 const CompositesPage = () => {
   return (
     <RootLayout>
       <div>
-        <IconedInputShowcase />
+        <ButtonedInputShowcase />
       </div>
     </RootLayout>
   );

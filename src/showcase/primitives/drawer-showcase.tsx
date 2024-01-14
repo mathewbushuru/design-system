@@ -36,7 +36,7 @@ function DrawerShowCase() {
       from="shadcn/ui"
       fromLink="https://github.com/shadcn-ui/ui"
       code="mathewbushuru/design-system"
-      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/ui/drawer.tsx"
+      codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/primitives/drawer.tsx"
       uses="@radix-ui/react-alert-dialog"
       usesLink="https://www.radix-ui.com/primitives/docs/components/alert-dialog"
     >

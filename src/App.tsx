@@ -14,7 +14,7 @@ import ExamplesPage from "@/pages/examples-page";
 
 import LearnCompany from "@/examples/learn-company/app";
 
-import IconedInputShowcase from "@/showcase/composites/iconed-input-showcase";
+import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
 
 import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import InputShowcase from "@/showcase/primitives/input-showcase";
@@ -46,10 +46,10 @@ const router = createBrowserRouter([
     element: <CompositesPage />,
   },
   {
-    path: "/composites/iconed-input",
+    path: "/composites/buttoned-input",
     element: (
       <RootLayout>
-        <IconedInputShowcase />
+        <ButtonedInputShowcase />
       </RootLayout>
     ),
   },
