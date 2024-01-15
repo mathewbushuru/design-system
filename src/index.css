@@ -79,7 +79,7 @@
     --muted: 175 18% 14%;
     --muted-foreground: 173 8% 60%;
 
-    --accent:174, 55%, 11%;
+    --accent: 174, 55%, 11%;
     --accent-foreground: 174, 55%, 98%;
 
     --popover: 180 9% 9%;
@@ -108,7 +108,11 @@
 
     --link: 170 90% 45%;
   }
-} 
+
+  .dark svg[role="img"] path {
+    fill: #f0f0f0;
+  }
+}
 
 @layer base {
   * {
