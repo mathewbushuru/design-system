@@ -142,7 +142,7 @@ function LearnCompany() {
               </CardTitle>
               <CardDescription>
                 <span className="">
-                  Bachelor of Science in Computer Science
+                  Master of Applied Data Science
                 </span>
               </CardDescription>
             </CardHeader>
