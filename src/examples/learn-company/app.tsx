@@ -3,6 +3,7 @@ import Hero from "@/examples/learn-company/components/hero";
 import PartnerCompanies from "@/examples/learn-company/components/partner-companies";
 import DegreePrograms from "@/examples/learn-company/components/degree-programs";
 import BusinessSubscription from "@/examples/learn-company/components/business-subscription";
+import CallToAction from "@/examples/learn-company/components/call-to-action";
 
 function LearnCompany() {
   return (
@@ -12,6 +13,7 @@ function LearnCompany() {
       <PartnerCompanies />
       <DegreePrograms />
       <BusinessSubscription />
+      <CallToAction />
     </div>
   );
 }
