@@ -25,7 +25,7 @@ export default function DegreePrograms() {
         <Card className="max-w-xs cursor-pointer transition-transform duration-300 sm:hover:scale-105">
           <CardHeader className="p-3">
             <img
-              src="https://images.pexels.com/photos/137618/pexels-photo-137618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src="https://images.pexels.com/photos/137618/pexels-photo-137618.jpeg?auto=compress&cs=tinysrgb&h=192&dpr=2"
               alt="Glass building near tree grove"
               className="mb-4 h-48 max-w-xs rounded-md object-cover"
             />
@@ -46,7 +46,7 @@ export default function DegreePrograms() {
         <Card className="max-w-xs cursor-pointer transition-transform duration-300 sm:hover:scale-105">
           <CardHeader className="p-3">
             <img
-              src="https://images.unsplash.com/photo-1692776691970-39dc4edfd870?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1692776691970-39dc4edfd870?q=80&h=384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="A person walking in front of a building"
               className="mb-4 h-48 max-w-xs rounded-md object-cover"
             />
@@ -67,7 +67,7 @@ export default function DegreePrograms() {
         <Card className="max-w-xs cursor-pointer transition-transform duration-300 sm:hidden sm:hover:scale-105 lg:block">
           <CardHeader className="p-3">
             <img
-              src="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?q=80&h=384&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="People walking near paccar hall univeristy of washington during daytime"
               className="mb-4 h-48 max-w-xs rounded-md object-cover"
             />

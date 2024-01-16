@@ -26,7 +26,7 @@ export default function Hero() {
         {/* Hero right  */}
         <div className="hidden lg:block lg:flex-1">
           <img
-            src="https://images.pexels.com/photos/7195437/pexels-photo-7195437.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            src="https://images.pexels.com/photos/7195437/pexels-photo-7195437.jpeg?auto=compress&cs=tinysrgb&w=320&dpr=2"
             alt="woman-in-teal-uniform-wearing-eyeglasses-and-headphones-while-looking-at-the-laptop"
             className="mx-auto w-80 rounded-lg"
           />

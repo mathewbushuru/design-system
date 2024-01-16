@@ -5,7 +5,7 @@ export default function CallToAction() {
     <div className="mx-auto mb-4 mt-8 flex max-w-screen-xl flex-col items-center gap-8 p-4 sm:mt-10 sm:flex-row lg:p-8">
       <div className="flex flex-1 items-center justify-center">
         <img
-          src="https://images.pexels.com/photos/6205749/pexels-photo-6205749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="https://images.pexels.com/photos/6205749/pexels-photo-6205749.jpeg?auto=compress&cs=tinysrgb&w=400&dpr=2"
           alt="young woman reading book on chair under bright lamp"
           className="shadow-xs lg:w-68 w-60 rounded-full"
         />
