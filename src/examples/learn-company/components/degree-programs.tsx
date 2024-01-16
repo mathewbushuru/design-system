@@ -11,7 +11,7 @@ import {
 
 export default function DegreePrograms() {
   return (
-    <div className="px-4 py-8 lg:p-8">
+    <div className="mx-auto max-w-screen-xl px-4 py-8 lg:p-8">
       <h3 className="mb-4 text-center font-semibold text-link sm:text-left">
         Degree programs
       </h3>
