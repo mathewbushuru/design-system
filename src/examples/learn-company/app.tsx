@@ -4,16 +4,18 @@ import PartnerCompanies from "@/examples/learn-company/components/partner-compan
 import DegreePrograms from "@/examples/learn-company/components/degree-programs";
 import BusinessSubscription from "@/examples/learn-company/components/business-subscription";
 import CallToAction from "@/examples/learn-company/components/call-to-action";
+import Footer from "@/examples/learn-company/components/footer";
 
 function LearnCompany() {
   return (
-    <div className="bg-popover pb-12 lg:pb-24">
+    <div className="bg-popover">
       <Navbar />
       <Hero />
       <PartnerCompanies />
       <DegreePrograms />
       <BusinessSubscription />
       <CallToAction />
+      <Footer />
     </div>
   );
 }
