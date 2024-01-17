@@ -33,7 +33,7 @@ export default function ShowcaseLayout({
 }: ShowcaseLayoutProps) {
   return (
     <div className={cn(examplePage ? "m-4 lg:m-6" : "px-12 py-6", className)}>
-      <h1 className="my-2 text-center text-lg font-semibold underline sm:text-left">
+      <h1 className="my-2 text-center text-lg font-semibold underline underline-offset-2 sm:text-left">
         {name}
       </h1>
 
@@ -42,7 +42,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold",
+                "text-sm font-semibold text-center sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
@@ -72,7 +72,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold",
+                "text-sm font-semibold text-center sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
@@ -102,7 +102,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold",
+                "text-sm font-semibold text-center sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
@@ -132,7 +132,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold",
+                "text-sm font-semibold text-center sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
