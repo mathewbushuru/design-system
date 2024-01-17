@@ -6,7 +6,7 @@ import { Drawer, DrawerTrigger, DrawerContent } from "@/components/primitives/dr
 
 function Navbar() {
   return (
-    <div className="fixed left-0 right-0 top-0 flex h-14 w-full items-center justify-between px-4 py-2 shadow-md backdrop-blur-md dark:border-b">
+    <div className="fixed left-0 right-0 top-0 flex h-14 w-full items-center justify-between px-4 py-2 shadow-md backdrop-blur-md dark:border-b z-50">
       <div className="flex items-center">
         <Drawer>
           <DrawerTrigger>
