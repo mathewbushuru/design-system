@@ -5,7 +5,7 @@ import LogoSvg from "@/assets/logo-svg";
 const HomePage = () => {
   return (
     <RootLayout>
-      <div className="flex  gap-8 p-6 pr-8 lg:pl-12 lg:pt-12">
+      <div className="flex  gap-8 p-6 pr-8 lg:pl-12 lg:pb-0">
         {/* Home page left  */}
         <div className="max-w-screen-lg flex-[3]">
           <h1 className="mt-4 font-serif text-3xl leading-10 ">
