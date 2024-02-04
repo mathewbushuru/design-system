@@ -1,5 +1,6 @@
 import ShowcaseLayout from "@/layouts/showcase-layout";
 import Button from "@/components/primitives/button";
+import { Input } from "@/components/primitives/input";
 import {
   Sheet,
   SheetTrigger,
@@ -52,7 +53,10 @@ function SheetShowCase() {
                   Make changes to your profile here. Click save when you're done
                 </SheetDescription>
               </SheetHeader>
-              <div className="grid gap-4 py-4">Sheet content here</div>
+              <div className="grid gap-4 py-4">
+                <Input placeholder="name" />
+                <Input placeholder="username" />
+              </div>
               <SheetFooter>
                 <SheetCancel asChild>
                   <Button variant="outline">Cancel</Button>
@@ -87,7 +91,10 @@ function SheetShowCase() {
                       done
                     </SheetDescription>
                   </SheetHeader>
-                  <div className="grid gap-4 py-4">Sheet content here</div>
+                  <div className="grid gap-4 py-4">
+                    <Input placeholder="name" />
+                    <Input placeholder="username" />
+                  </div>
                   <SheetFooter>
                     <SheetCancel asChild>
                       <Button variant="outline">Cancel</Button>
