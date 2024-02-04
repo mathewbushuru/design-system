@@ -2,6 +2,22 @@ import { useNavigate } from "react-router-dom";
 
 import Button from "@/components/primitives/button";
 
+const examplesLinks = [
+  { name: "Learn Company", link: "/examples/learn-company" },
+];
+
+const compositesLinks = [
+  { name: "Buttoned Input", link: "/composites/buttoned-input" },
+];
+
+const primitivesLinks = [
+  { name: "Button", link: "/primitives/button" },
+  { name: "Card", link: "/primitives/card" },
+  { name: "Drawer", link: "/primitives/drawer" },
+  { name: "Dropdown Menu", link: "/primitives/dropdown-menu" },
+  { name: "Input", link: "/primitives/input" },
+];
+
 function SideNavigation() {
   const navigate = useNavigate();
 
@@ -23,13 +39,16 @@ function SideNavigation() {
       >
         Examples
       </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/examples/learn-company")}
-      >
-        Learn Company
-      </Button>
+      {examplesLinks.map((example) => (
+        <Button
+          key={example.link}
+          variant="ghost"
+          className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+          onClick={() => navigate(example.link)}
+        >
+          {example.name}
+        </Button>
+      ))}
 
       {/* Component Composites  */}
       <Button
@@ -39,13 +58,16 @@ function SideNavigation() {
       >
         Component Composites
       </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/composites/buttoned-input")}
-      >
-        Buttoned Input
-      </Button>
+      {compositesLinks.map((composite) => (
+        <Button
+          key={composite.link}
+          variant="ghost"
+          className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+          onClick={() => navigate(composite.link)}
+        >
+          {composite.name}
+        </Button>
+      ))}
 
       {/* Component Primitives  */}
       <Button
@@ -55,41 +77,16 @@ function SideNavigation() {
       >
         Component Primitives
       </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/primitives/button")}
-      >
-        Button
-      </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/primitives/card")}
-      >
-        Card
-      </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/primitives/drawer")}
-      >
-        Drawer
-      </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/primitives/dropdown-menu")}
-      >
-        Dropdown Menu
-      </Button>
-      <Button
-        variant="ghost"
-        className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
-        onClick={() => navigate("/primitives/input")}
-      >
-        Input
-      </Button>
+      {primitivesLinks.map((primitive) => (
+        <Button
+          key={primitive.link}
+          variant="ghost"
+          className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+          onClick={() => navigate(primitive.link)}
+        >
+          {primitive.name}
+        </Button>
+      ))}
     </div>
   );
 }
