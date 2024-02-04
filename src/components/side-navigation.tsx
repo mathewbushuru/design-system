@@ -13,9 +13,9 @@ const compositesLinks = [
 const primitivesLinks = [
   { name: "Button", link: "/primitives/button" },
   { name: "Card", link: "/primitives/card" },
-  { name: "Drawer", link: "/primitives/drawer" },
   { name: "Dropdown Menu", link: "/primitives/dropdown-menu" },
   { name: "Input", link: "/primitives/input" },
+  { name: "Sheet", link: "/primitives/sheet" }
 ];
 
 function SideNavigation() {

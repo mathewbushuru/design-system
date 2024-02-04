@@ -7,8 +7,8 @@ import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase
 import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import CardShowcase from "@/showcase/primitives/card-showcase";
 import InputShowcase from "@/showcase/primitives/input-showcase";
-import DrawerShowCase from "@/showcase/primitives/drawer-showcase";
 import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
+import SheetShowCase from "@/showcase/primitives/sheet-showcase";
 
 export const exampleRoutes = [
   {
@@ -60,18 +60,18 @@ export const primitivesRoutes = [
     ),
   },
   {
-    path: "/primitives/drawer",
-    element: (
-      <RootLayout>
-        <DrawerShowCase />
-      </RootLayout>
-    ),
-  },
-  {
     path: "/primitives/dropdown-menu",
     element: (
       <RootLayout>
         <DropdownMenuShowcase />
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/primitives/sheet",
+    element: (
+      <RootLayout>
+        <SheetShowCase />
       </RootLayout>
     ),
   },

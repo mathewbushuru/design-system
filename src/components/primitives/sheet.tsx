@@ -1,13 +1,13 @@
 import * as React from "react";
-import * as DrawerPrimitive from "@radix-ui/react-alert-dialog";
+import * as SheetPrimitive from "@radix-ui/react-alert-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
 import { X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
-const Drawer = DrawerPrimitive.Root;
+const Sheet = SheetPrimitive.Root;
 
-const DrawerTrigger = DrawerPrimitive.Trigger;
+const SheetTrigger = SheetPrimitive.Trigger;
 
 const portalVariants = cva("fixed inset-0 z-50 flex", {
   variants: {
@@ -23,27 +23,27 @@ const portalVariants = cva("fixed inset-0 z-50 flex", {
   },
 });
 
-interface DrawerPortalProps
-  extends DrawerPrimitive.DialogPortalProps,
+interface SheetPortalProps
+  extends SheetPrimitive.DialogPortalProps,
     VariantProps<typeof portalVariants> {}
 
-const DrawerPortal = ({ position, children, ...props }: DrawerPortalProps) => {
+const SheetPortal = ({ position, children, ...props }: SheetPortalProps) => {
   return (
-    <DrawerPrimitive.Portal {...props}>
+    <SheetPrimitive.Portal {...props}>
       <div className={portalVariants({ position })}>{children}</div>
-    </DrawerPrimitive.Portal>
+    </SheetPrimitive.Portal>
   );
 };
 
-const DrawerOverlay = React.forwardRef<
-  React.ElementRef<typeof DrawerPrimitive.Overlay>,
-  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Overlay>
+const SheetOverlay = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Overlay>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
 >(({ className, children, ...props }, ref) => {
   return (
-    <DrawerPrimitive.Overlay
+    <SheetPrimitive.Overlay
       ref={ref}
       className={cn(
-        "fixed inset-0 bg-background/80 backdrop-blur-sm transition-all duration-100 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=open]:fade-in",
+        "fixed inset-0 bg-background/80 backdrop-blur-sm transition-all duration-100 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:fade-in data-[state=closed]:fade-out",
         className,
       )}
       {...props}
@@ -51,7 +51,7 @@ const DrawerOverlay = React.forwardRef<
   );
 });
 
-const DrawerVariants = cva(
+const SheetVariants = cva(
   "fixed z-50 scale-100 bg-background p-6 opacity-100 shadow-lg",
   {
     variants: {
@@ -139,33 +139,33 @@ const DrawerVariants = cva(
   },
 );
 
-export interface DrawerContentProps
-  extends React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content>,
-    VariantProps<typeof DrawerVariants> {}
+export interface SheetContentProps
+  extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
+    VariantProps<typeof SheetVariants> {}
 
-const DrawerContent = React.forwardRef<
-  React.ElementRef<typeof DrawerPrimitive.Content>,
-  DrawerContentProps
+const SheetContent = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Content>,
+  SheetContentProps
 >(({ position, size, className, children, ...props }, ref) => {
   return (
-    <DrawerPortal position={position}>
-      <DrawerOverlay />
-      <DrawerPrimitive.Content
+    <SheetPortal position={position}>
+      <SheetOverlay />
+      <SheetPrimitive.Content
         ref={ref}
-        className={cn(DrawerVariants({ position, size }), className)}
+        className={cn(SheetVariants({ position, size }), className)}
         {...props}
       >
         {children}
-        <DrawerPrimitive.Cancel className="absolute right-4 top-4 rounded-sm opacity-70 transition-opacity focus-within:ring-ring hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background">
+        <SheetPrimitive.Cancel className="absolute right-4 top-4 rounded-sm opacity-70 transition-opacity focus-within:ring-ring hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background">
           <X className="h-4 w-4" />
           <span className="sr-only">Close</span>
-        </DrawerPrimitive.Cancel>
-      </DrawerPrimitive.Content>
-    </DrawerPortal>
+        </SheetPrimitive.Cancel>
+      </SheetPrimitive.Content>
+    </SheetPortal>
   );
 });
 
-const DrawerHeader = ({
+const SheetHeader = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => {
@@ -180,7 +180,7 @@ const DrawerHeader = ({
   );
 };
 
-const DrawerFooter = ({
+const SheetFooter = ({
   className,
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) => {
@@ -195,12 +195,12 @@ const DrawerFooter = ({
   );
 };
 
-const DrawerAction = React.forwardRef<
-  React.ElementRef<typeof DrawerPrimitive.Action>,
-  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Action>
+const SheetAction = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Action>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Action>
 >(({ className, ...props }, ref) => {
   return (
-    <DrawerPrimitive.Action
+    <SheetPrimitive.Action
       ref={ref}
       className={cn(
         "flex flex-col-reverse items-stretch sm:flex-row sm:items-center sm:justify-end sm:space-x-2",
@@ -211,12 +211,12 @@ const DrawerAction = React.forwardRef<
   );
 });
 
-const DrawerCancel = React.forwardRef<
-  React.ElementRef<typeof DrawerPrimitive.Cancel>,
-  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Cancel>
+const SheetCancel = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Cancel>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Cancel>
 >(({ className, ...props }, ref) => {
   return (
-    <DrawerPrimitive.Cancel
+    <SheetPrimitive.Cancel
       ref={ref}
       className={cn(
         "flex flex-col-reverse items-stretch sm:flex-row sm:items-center sm:justify-end sm:space-x-2",
@@ -227,12 +227,12 @@ const DrawerCancel = React.forwardRef<
   );
 });
 
-const DrawerTitle = React.forwardRef<
-  React.ElementRef<typeof DrawerPrimitive.Title>,
-  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Title>
+const SheetTitle = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Title>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title>
 >(({ className, ...props }, ref) => {
   return (
-    <DrawerPrimitive.Title
+    <SheetPrimitive.Title
       ref={ref}
       className={cn("text-lg font-semibold text-foreground", className)}
       {...props}
@@ -240,12 +240,12 @@ const DrawerTitle = React.forwardRef<
   );
 });
 
-const DrawerDescription = React.forwardRef<
-  React.ElementRef<typeof DrawerPrimitive.Description>,
-  React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Description>
+const SheetDescription = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Description>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Description>
 >(({ className, ...props }, ref) => {
   return (
-    <DrawerPrimitive.Description
+    <SheetPrimitive.Description
       ref={ref}
       className={cn("text-sm text-muted-foreground", className)}
       {...props}
@@ -254,13 +254,13 @@ const DrawerDescription = React.forwardRef<
 });
 
 export {
-  Drawer,
-  DrawerTrigger,
-  DrawerContent,
-  DrawerHeader,
-  DrawerFooter,
-  DrawerAction,
-  DrawerCancel,
-  DrawerTitle,
-  DrawerDescription,
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetHeader,
+  SheetFooter,
+  SheetAction,
+  SheetCancel,
+  SheetTitle,
+  SheetDescription,
 };
