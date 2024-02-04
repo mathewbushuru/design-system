@@ -7,9 +7,9 @@ import {
 import ThemeProvider from "@/components/theme-provider";
 
 import HomePage from "@/pages/home-page";
+import ExamplesPage from "@/pages/examples-page";
 import CompositesPage from "@/pages/composites-page";
 import PrimitivesPage from "@/pages/primitives-page";
-import ExamplesPage from "@/pages/examples-page";
 
 import { exampleRoutes, compositesRoutes, primitivesRoutes } from "@/routes";
 
