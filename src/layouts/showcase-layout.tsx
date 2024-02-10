@@ -54,6 +54,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{from}</span>
@@ -84,6 +85,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{design}</span>
@@ -114,6 +116,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{code}</span>
@@ -144,6 +147,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{uses}</span>
