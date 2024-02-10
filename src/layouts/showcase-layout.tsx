@@ -2,6 +2,11 @@ import { ExternalLink } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import Button from "@/components/primitives/button";
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+} from "@/components/primitives/sheet";
 
 interface ShowcaseLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string;
@@ -42,7 +47,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold text-center sm:text-left",
+                "text-center text-sm font-semibold sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
@@ -54,6 +59,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{from}</span>
@@ -72,7 +78,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold text-center sm:text-left",
+                "text-center text-sm font-semibold sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
@@ -84,6 +90,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{design}</span>
@@ -102,7 +109,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold text-center sm:text-left",
+                "text-center text-sm font-semibold sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
@@ -114,6 +121,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{code}</span>
@@ -132,7 +140,7 @@ export default function ShowcaseLayout({
           <div className="flex flex-col items-center sm:flex-row">
             <span
               className={cn(
-                "text-sm font-semibold text-center sm:text-left",
+                "text-center text-sm font-semibold sm:text-left",
                 examplePage ? "w-32" : "w-12",
               )}
             >
@@ -144,6 +152,7 @@ export default function ShowcaseLayout({
                 target="_blank"
                 rel="noopener noreferrer"
                 className="col-span-3"
+                tabIndex={-1}
               >
                 <Button variant="link" size="sm">
                   <span>{uses}</span>
@@ -158,6 +167,21 @@ export default function ShowcaseLayout({
           </div>
         )}
       </div>
+
+      {examplePage && (
+        <div className="-mt-2 mb-4 flex justify-center sm:justify-start">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="secondary" className="">
+                Preview in full screen
+              </Button>
+            </SheetTrigger>
+            <SheetContent position="right" size="full" className="overflow-y-scroll">
+              {children}
+            </SheetContent>
+          </Sheet>
+        </div>
+      )}
 
       <div
         className={
