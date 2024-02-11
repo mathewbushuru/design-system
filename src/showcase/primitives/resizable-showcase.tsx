@@ -60,28 +60,50 @@ export default function ResizableShowcase() {
       </div>
 
       <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
-        Horizontal + Vertical Resizable
+        Nested Resizables
       </h1>
       <div className="sm:max-w-md">
         <ResizablePanelGroup
           direction="horizontal"
           className="min-h-48 rounded-lg border"
         >
-          <ResizablePanel defaultSize={50}>
-            One
-          </ResizablePanel>
+          <ResizablePanel defaultSize={50}>One</ResizablePanel>
           <ResizableHandle />
           <ResizablePanel defaultSize={50}>
             <ResizablePanelGroup direction="vertical">
-              <ResizablePanel defaultSize={25}>
-                Two
-              </ResizablePanel>
+              <ResizablePanel defaultSize={25}>Two</ResizablePanel>
               <ResizableHandle />
-              <ResizablePanel defaultSize={75}>
-                Three
+              <ResizablePanel defaultSize={75}>Three</ResizablePanel>
+            </ResizablePanelGroup>
+          </ResizablePanel>
+        </ResizablePanelGroup>
+      </div>
+
+      <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
+        Nested Resizable Groups
+      </h1>
+      <div className="sm:max-w-md">
+        <ResizablePanelGroup
+          direction="horizontal"
+          className="min-h-48 rounded-lg border"
+        >
+          <ResizablePanel>left</ResizablePanel>
+          <ResizableHandle />
+          <ResizablePanel>
+            <ResizablePanelGroup direction="vertical">
+              <ResizablePanel>top</ResizablePanel>
+              <ResizableHandle />
+              <ResizablePanel>
+                <ResizablePanelGroup direction="horizontal">
+                  <ResizablePanel>middle left</ResizablePanel>
+                  <ResizableHandle />
+                  <ResizablePanel>middle right</ResizablePanel>
+                </ResizablePanelGroup>
               </ResizablePanel>
             </ResizablePanelGroup>
           </ResizablePanel>
+          <ResizableHandle />
+          <ResizablePanel>right</ResizablePanel>
         </ResizablePanelGroup>
       </div>
     </ShowcaseLayout>

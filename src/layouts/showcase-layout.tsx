@@ -176,7 +176,11 @@ export default function ShowcaseLayout({
                 Preview in full screen
               </Button>
             </SheetTrigger>
-            <SheetContent position="right" size="full" className="overflow-y-scroll">
+            <SheetContent
+              position="right"
+              size="full"
+              className="overflow-y-scroll"
+            >
               {children}
             </SheetContent>
           </Sheet>
@@ -185,7 +189,7 @@ export default function ShowcaseLayout({
 
       <div
         className={
-          examplePage ? "overflow-hidden rounded-md shadow-lg dark:border lg:mb-12" : "lg:mb-8"
+          examplePage ? "overflow-hidden rounded-md shadow-lg dark:border" : ""
         }
       >
         {children}
