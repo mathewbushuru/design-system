@@ -48,29 +48,29 @@ export default function TwistDawkins() {
 
       {/* Stats  */}
       <div className="flex flex-col gap-4 px-3 py-12 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-12 sm:px-6 sm:py-20">
-        <div className="max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl sm:w-[40%]">
+        <div className="group max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl sm:w-[40%]">
           <p className="font-serif text-2xl text-primary">
             185+ Years of Excellence
           </p>
-          <p className="mt-4 text-lg text-muted-foreground antialiased">
+          <p className="mt-4 text-lg text-muted-foreground antialiased group-hover:text-primary">
             Read about our history
           </p>
         </div>
 
-        <div className="max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl  sm:w-[40%]">
+        <div className="group group max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl sm:w-[40%]">
           <p className="font-serif text-2xl text-primary">
             Approximately 1200 Attorneys Firmwide
           </p>
-          <p className="mt-4 text-lg text-muted-foreground antialiased">
+          <p className="mt-4 text-lg text-muted-foreground antialiased group-hover:text-primary">
             Meet our lawyers
           </p>
         </div>
 
-        <div className="max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl  sm:w-[40%]">
+        <div className="group max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl sm:w-[40%]">
           <p className="font-serif text-2xl text-primary">
             Offices in 10 Cities Around Europe
           </p>
-          <p className="mt-4 text-lg text-muted-foreground antialiased">
+          <p className="mt-4 text-lg text-muted-foreground antialiased group-hover:text-primary">
             Explore our offices
           </p>
         </div>
@@ -123,10 +123,10 @@ export default function TwistDawkins() {
           <p>
             <span className="font-semibold text-primary">Restructuring: </span>
             <span className="antialiased">
-              Our restructuring lawyers offer guidance through the complexities faced by
-              financially unstable enterprises, employing a keen understanding
-              of business advisory, crisis management, and the intricacies of
-              insolvency law.
+              Our restructuring lawyers offer guidance through the complexities
+              faced by financially unstable enterprises, employing a keen
+              understanding of business advisory, crisis management, and the
+              intricacies of insolvency law.
             </span>
           </p>
         </div>

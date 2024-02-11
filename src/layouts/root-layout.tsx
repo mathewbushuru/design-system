@@ -5,7 +5,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex max-h-screen overflow-hidden bg-background text-foreground">
       {/* Sidebar  */}
-      <div className="hidden h-screen min-w-60 px-4 shadow-md dark:border-r lg:block">
+      <div className="hidden h-screen min-w-60 overflow-y-auto px-4 shadow-md dark:border-r lg:block">
         <SideNavigation />
       </div>
 
