@@ -20,7 +20,7 @@ export default function TwistDawkins() {
       </div>
 
       {/* Hero  */}
-      <div className="flex flex-col bg-secondary/20 px-3 py-12 sm:px-6 sm:text-foreground/80 lg:flex-row sm:py-20 lg:py-24">
+      <div className="flex flex-col bg-secondary/20 px-3 py-12 dark:bg-primary/5 sm:px-6 sm:py-20 sm:text-foreground/80 lg:flex-row lg:py-24">
         {/* Title  */}
         <div className="lg:flex-1 lg:pl-12">
           <h5 className="mb-4 font-serif text-xl tracking-wide">Overview</h5>
@@ -45,7 +45,36 @@ export default function TwistDawkins() {
           </p>
         </div>
       </div>
-      
+
+      {/* Stats  */}
+      <div className="flex flex-col gap-4 px-3 py-12 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-12 sm:px-6 sm:py-20">
+        <div className="max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl sm:w-[40%]">
+          <p className="font-serif text-2xl text-primary">
+            185+ Years of Excellence
+          </p>
+          <p className="mt-4 text-lg text-muted-foreground antialiased">
+            Read about our history
+          </p>
+        </div>
+
+        <div className="max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl  sm:w-[40%]">
+          <p className="font-serif text-2xl text-primary">
+            Approximately 1200 Attorneys Firmwide
+          </p>
+          <p className="mt-4 text-lg text-muted-foreground antialiased">
+            Meet our lawyers
+          </p>
+        </div>
+
+        <div className="max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-none hover:shadow-2xl  sm:w-[40%]">
+          <p className="font-serif text-2xl text-primary">
+            Offices in 10 Cities Around Europe
+          </p>
+          <p className="mt-4 text-lg text-muted-foreground antialiased">
+            Explore our offices
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
