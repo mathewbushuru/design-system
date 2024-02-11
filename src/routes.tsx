@@ -1,7 +1,7 @@
 import RootLayout from "@/layouts/root-layout";
 
 import LearnCompany from "@/examples/learn-company/app";
-import EmailCompany from "./examples/email-company/app";
+import TwistDawkins from "@/examples/twist-dawkins/app";
 
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
 
@@ -24,11 +24,11 @@ export const exampleRoutes = [
     ),
   },
   {
-    path: "/examples/email-company",
+    path: "/examples/twist-dawkins",
     element: (
       <RootLayout>
         <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
-          <EmailCompany />
+          <TwistDawkins />
         </div>
       </RootLayout>
     ),
