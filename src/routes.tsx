@@ -1,6 +1,7 @@
 import RootLayout from "@/layouts/root-layout";
 
 import LearnCompany from "@/examples/learn-company/app";
+import EmailCompany from "./examples/email-company/app";
 
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
 
@@ -8,6 +9,7 @@ import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import CardShowcase from "@/showcase/primitives/card-showcase";
 import InputShowcase from "@/showcase/primitives/input-showcase";
 import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
+import ResizableShowcase from "./showcase/primitives/resizable-showcase";
 import SheetShowCase from "@/showcase/primitives/sheet-showcase";
 
 export const exampleRoutes = [
@@ -17,6 +19,16 @@ export const exampleRoutes = [
       <RootLayout>
         <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
           <LearnCompany />
+        </div>
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/examples/email-company",
+    element: (
+      <RootLayout>
+        <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
+          <EmailCompany />
         </div>
       </RootLayout>
     ),
@@ -68,11 +80,19 @@ export const primitivesRoutes = [
     ),
   },
   {
+    path: "/primitives/resizable",
+    element: (
+      <RootLayout>
+        <ResizableShowcase />
+      </RootLayout>
+    ),
+  },
+  {
     path: "/primitives/sheet",
     element: (
       <RootLayout>
         <SheetShowCase />
       </RootLayout>
     ),
-  },
+  }
 ];

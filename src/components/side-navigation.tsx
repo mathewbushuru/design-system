@@ -4,6 +4,7 @@ import Button from "@/components/primitives/button";
 
 const examplesLinks = [
   { name: "Learn Company", link: "/examples/learn-company" },
+  // { name: "Email Company", link: "/examples/email-company" },
 ];
 
 const compositesLinks = [
@@ -15,6 +16,7 @@ const primitivesLinks = [
   { name: "Card", link: "/primitives/card" },
   { name: "Dropdown Menu", link: "/primitives/dropdown-menu" },
   { name: "Input", link: "/primitives/input" },
+  { name: "Resizable", link: "/primitives/resizable" },
   { name: "Sheet", link: "/primitives/sheet" }
 ];
 

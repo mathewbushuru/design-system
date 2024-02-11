@@ -176,7 +176,11 @@ export default function ShowcaseLayout({
                 Preview in full screen
               </Button>
             </SheetTrigger>
-            <SheetContent position="right" size="full" className="overflow-y-scroll">
+            <SheetContent
+              position="right"
+              size="full"
+              className="overflow-y-scroll"
+            >
               {children}
             </SheetContent>
           </Sheet>
