@@ -5,12 +5,12 @@ export default function TwistDawkinsShowcase() {
   return (
     <>
       <ShowcaseLayout
-        name="Email Company"
+        name="Twist & Dawkins LLP"
         examplePage={true}
-        from="shadcn/ui"
-        fromLink="https://github.com/shadcn-ui/ui/blob/main/apps/www/app/examples/mail/page.tsx"
+        design="Kirland & Ellis"
+        designLink="https://www.kirkland.com/"
         code="mathewbushuru/design-system"
-        codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/examples/email-company/app.tsx"
+        codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/examples/twist-dawkins/app.tsx"
       >
         <TwistDawkins />
       </ShowcaseLayout>
