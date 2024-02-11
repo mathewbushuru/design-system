@@ -185,7 +185,7 @@ export default function ShowcaseLayout({
 
       <div
         className={
-          examplePage ? "overflow-hidden rounded-md shadow-lg dark:border" : ""
+          examplePage ? "overflow-hidden rounded-md shadow-lg dark:border lg:mb-12" : "lg:mb-8"
         }
       >
         {children}
