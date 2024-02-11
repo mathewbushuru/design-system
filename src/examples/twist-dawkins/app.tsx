@@ -131,6 +131,13 @@ export default function TwistDawkins() {
           </p>
         </div>
       </div>
+
+      {/* Who We Are  */}
+      {/* Learn More  */}
+      {/* Investing in communities  */}
+      {/* Charity/pro bono  */}
+      {/* News and recognition  */}
+      {/* footer  */}
     </div>
   );
 }
