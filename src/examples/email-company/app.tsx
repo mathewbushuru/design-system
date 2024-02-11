@@ -4,7 +4,7 @@ import {
   ResizableHandle,
 } from "@/components/primitives/resizable";
 
-const defaultLayouts = [265, 440, 655];
+const defaultPanelSizes = [265, 440, 655];
 
 export default function EmailCompany() {
   return (
@@ -14,18 +14,23 @@ export default function EmailCompany() {
         className="max-h-[800px] min-h-48"
       >
         <ResizablePanel
-          defaultSize={defaultLayouts[0]}
+          defaultSize={defaultPanelSizes[0]}
           minSize={15}
           maxSize={20}
         >
+          <div className="flex h-12 items-center justify-center">
+            {/* Account Switcher */}
+          </div>
           Sidebar
         </ResizablePanel>
         <ResizableHandle withHandle />
-        <ResizablePanel defaultSize={defaultLayouts[1]} minSize={30}>
+        <ResizablePanel defaultSize={defaultPanelSizes[1]} minSize={30}>
           Two
         </ResizablePanel>
         <ResizableHandle withHandle />
-        <ResizablePanel defaultSize={defaultLayouts[2]}>Three</ResizablePanel>
+        <ResizablePanel defaultSize={defaultPanelSizes[2]}>
+          Three
+        </ResizablePanel>
       </ResizablePanelGroup>
     </div>
   );

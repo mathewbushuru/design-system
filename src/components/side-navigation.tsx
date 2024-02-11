@@ -4,7 +4,7 @@ import Button from "@/components/primitives/button";
 
 const examplesLinks = [
   { name: "Learn Company", link: "/examples/learn-company" },
-  { name: "Email Company", link: "/examples/email-company" },
+  // { name: "Email Company", link: "/examples/email-company" },
 ];
 
 const compositesLinks = [
