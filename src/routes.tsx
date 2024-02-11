@@ -9,6 +9,7 @@ import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import CardShowcase from "@/showcase/primitives/card-showcase";
 import InputShowcase from "@/showcase/primitives/input-showcase";
 import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
+import ResizableShowcase from "./showcase/primitives/resizable-showcase";
 import SheetShowCase from "@/showcase/primitives/sheet-showcase";
 
 export const exampleRoutes = [
@@ -79,11 +80,19 @@ export const primitivesRoutes = [
     ),
   },
   {
+    path: "/primitives/resizable",
+    element: (
+      <RootLayout>
+        <ResizableShowcase />
+      </RootLayout>
+    ),
+  },
+  {
     path: "/primitives/sheet",
     element: (
       <RootLayout>
         <SheetShowCase />
       </RootLayout>
     ),
-  },
+  }
 ];

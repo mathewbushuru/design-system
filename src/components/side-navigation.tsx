@@ -16,6 +16,7 @@ const primitivesLinks = [
   { name: "Card", link: "/primitives/card" },
   { name: "Dropdown Menu", link: "/primitives/dropdown-menu" },
   { name: "Input", link: "/primitives/input" },
+  { name: "Resizable", link: "/primitives/resizable" },
   { name: "Sheet", link: "/primitives/sheet" }
 ];
 
