@@ -1,7 +1,7 @@
 import ShowcaseLayout from "@/layouts/showcase-layout";
-import EmailCompany from "@/examples/email-company/app";
+import TwistDawkins from "@/examples/twist-dawkins/app";
 
-function EmailCompanyShowcase() {
+export default function TwistDawkinsShowcase() {
   return (
     <>
       <ShowcaseLayout
@@ -12,10 +12,8 @@ function EmailCompanyShowcase() {
         code="mathewbushuru/design-system"
         codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/examples/email-company/app.tsx"
       >
-        <EmailCompany />
+        <TwistDawkins />
       </ShowcaseLayout>
     </>
   );
 }
-
-export default EmailCompanyShowcase;
