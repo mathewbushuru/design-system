@@ -223,7 +223,6 @@ export default function TwistDawkins() {
       </div>
 
       {/* Investing in communities  */}
-      {/* Who We Are  */}
       <div className="flex flex-col px-3 py-12 sm:px-6 sm:py-20 sm:text-foreground/80 lg:flex-row lg:gap-3 lg:py-24">
         {/* Title  */}
         <div className="lg:flex-1 lg:pl-12">
@@ -248,34 +247,45 @@ export default function TwistDawkins() {
       {/* Charity  */}
       <div className="flex flex-col gap-4 px-3 pb-12 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-12 sm:px-6 sm:pb-20">
         <div className="group max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-transparent hover:shadow-2xl sm:w-[43%] lg:w-[29%]">
-          <p className="font-serif text-2xl text-primary">
-            Pro Bono
-          </p>
+          <p className="font-serif text-2xl text-primary">Pro Bono</p>
           <p className="mt-4 text-lg text-muted-foreground antialiased group-hover:text-primary">
-            We are dedicated to providing free legal services to clients who cannot afford counsel
+            We are dedicated to providing free legal services to clients who
+            cannot afford counsel
           </p>
         </div>
 
         <div className="group group max-w-md cursor-pointer border border-primary px-8 py-24 text-center transition-all duration-500 hover:border-transparent hover:shadow-2xl sm:w-[43%] lg:w-[29%]">
-          <p className="font-serif text-2xl text-primary">
-            Charitable Giving
-          </p>
+          <p className="font-serif text-2xl text-primary">Charitable Giving</p>
           <p className="mt-4 text-lg text-muted-foreground antialiased group-hover:text-primary">
-            We proudly support nonprofits and law-related organizations with generous financial contributions
+            We proudly support nonprofits and law-related organizations with
+            generous financial contributions
           </p>
         </div>
 
         <div className="group max-w-md cursor-pointer border border-primary px-8 py-20 text-center transition-all duration-500 hover:border-transparent hover:shadow-2xl sm:w-[43%] lg:w-[29%]">
-          <p className="font-serif text-2xl text-primary">
-            Sustainability
-          </p>
+          <p className="font-serif text-2xl text-primary">Sustainability</p>
           <p className="mt-4 text-lg text-muted-foreground antialiased group-hover:text-primary">
-            We are committed to reducing our environment footprint, creating efficient service for clients and a vibrant work atmosphere for employees
+            We are committed to reducing our environment footprint, creating
+            efficient service for clients and a vibrant work atmosphere for
+            employees
           </p>
         </div>
       </div>
 
       {/* footer  */}
+      <div className="bg-secondary px-3 py-6 sm:p-6">
+        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+          <ul className="flex flex-col sm:flex-row items-center gap-2 text-secondary-foreground/80 sm:gap-4">
+            <li className="hover:text-foreground hover:cursor-pointer">Locations</li>
+            <li className="hover:text-foreground hover:cursor-pointer">Attorney Advertising</li>
+            <li className="hover:text-foreground hover:cursor-pointer">Privacy & Disclaimers</li>
+          </ul>
+
+          <h1 className="font-serif text-lg font-medium uppercase tracking-wider sm:text-xl">
+            Twist & Dawkins
+          </h1>
+        </div>
+      </div>
     </div>
   );
 }
