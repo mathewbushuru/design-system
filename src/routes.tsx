@@ -4,6 +4,7 @@ import LearnCompany from "@/examples/learn-company/app";
 import TwistDawkins from "@/examples/twist-dawkins/app";
 
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
+import BrandButtonsShowcase from "@/showcase/composites/brand-buttons-showcase";
 
 import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import CardShowcase from "@/showcase/primitives/card-showcase";
@@ -41,6 +42,14 @@ export const compositesRoutes = [
     element: (
       <RootLayout>
         <ButtonedInputShowcase />
+      </RootLayout>
+    ),
+  },
+  {
+    path: "/composites/brand-buttons",
+    element: (
+      <RootLayout>
+        <BrandButtonsShowcase />
       </RootLayout>
     ),
   },
