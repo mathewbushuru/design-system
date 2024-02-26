@@ -17,7 +17,7 @@ export const exampleRoutes = [
   {
     path: "/examples/learn-company",
     element: (
-      <RootLayout>
+      <RootLayout key="learn-company">
         <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
           <LearnCompany />
         </div>
@@ -27,7 +27,7 @@ export const exampleRoutes = [
   {
     path: "/examples/twist-dawkins",
     element: (
-      <RootLayout>
+      <RootLayout key="twistdawkins-company">
         <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
           <TwistDawkins />
         </div>
@@ -40,7 +40,7 @@ export const compositesRoutes = [
   {
     path: "/composites/buttoned-input",
     element: (
-      <RootLayout>
+      <RootLayout key="buttoned-input">
         <ButtonedInputShowcase />
       </RootLayout>
     ),
@@ -48,7 +48,7 @@ export const compositesRoutes = [
   {
     path: "/composites/composite-buttons",
     element: (
-      <RootLayout>
+      <RootLayout key="composite-buttons">
         <CompositeButtonsShowcase />
       </RootLayout>
     ),
@@ -59,7 +59,7 @@ export const primitivesRoutes = [
   {
     path: "/primitives/button",
     element: (
-      <RootLayout>
+      <RootLayout key="button">
         <ButtonShowcase />
       </RootLayout>
     ),
@@ -67,7 +67,7 @@ export const primitivesRoutes = [
   {
     path: "/primitives/card",
     element: (
-      <RootLayout>
+      <RootLayout key="card">
         <CardShowcase />
       </RootLayout>
     ),
@@ -75,7 +75,7 @@ export const primitivesRoutes = [
   {
     path: "/primitives/input",
     element: (
-      <RootLayout>
+      <RootLayout key="input">
         <InputShowcase />
       </RootLayout>
     ),
@@ -83,7 +83,7 @@ export const primitivesRoutes = [
   {
     path: "/primitives/dropdown-menu",
     element: (
-      <RootLayout>
+      <RootLayout key="dropdown-menu">
         <DropdownMenuShowcase />
       </RootLayout>
     ),
@@ -91,7 +91,7 @@ export const primitivesRoutes = [
   {
     path: "/primitives/resizable",
     element: (
-      <RootLayout>
+      <RootLayout key="resizable">
         <ResizableShowcase />
       </RootLayout>
     ),
@@ -99,7 +99,7 @@ export const primitivesRoutes = [
   {
     path: "/primitives/sheet",
     element: (
-      <RootLayout>
+      <RootLayout key="sheet">
         <SheetShowCase />
       </RootLayout>
     ),
