@@ -9,7 +9,7 @@ const examplesLinks = [
 
 const compositesLinks = [
   { name: "Buttoned Input", link: "/composites/buttoned-input" },
-  { name: "Brand Buttons", link: "/composites/brand-buttons" },
+  { name: "Composite Buttons", link: "/composites/composite-buttons" },
 ];
 
 const primitivesLinks = [

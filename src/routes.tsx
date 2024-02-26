@@ -4,7 +4,7 @@ import LearnCompany from "@/examples/learn-company/app";
 import TwistDawkins from "@/examples/twist-dawkins/app";
 
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
-import BrandButtonsShowcase from "@/showcase/composites/brand-buttons-showcase";
+import CompositeButtonsShowcase from "./showcase/composites/composite-buttons-showcase";
 
 import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import CardShowcase from "@/showcase/primitives/card-showcase";
@@ -46,10 +46,10 @@ export const compositesRoutes = [
     ),
   },
   {
-    path: "/composites/brand-buttons",
+    path: "/composites/composite-buttons",
     element: (
       <RootLayout>
-        <BrandButtonsShowcase />
+        <CompositeButtonsShowcase />
       </RootLayout>
     ),
   },
@@ -103,5 +103,5 @@ export const primitivesRoutes = [
         <SheetShowCase />
       </RootLayout>
     ),
-  }
+  },
 ];
