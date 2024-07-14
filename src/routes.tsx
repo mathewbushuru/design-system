@@ -4,13 +4,13 @@ import LearnCompany from "@/examples/learn-company/app";
 import TwistDawkins from "@/examples/twist-dawkins/app";
 
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
-import CompositeButtonsShowcase from "./showcase/composites/composite-buttons-showcase";
+import CompositeButtonsShowcase from "@/showcase/composites/composite-buttons-showcase";
 
 import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import CardShowcase from "@/showcase/primitives/card-showcase";
 import InputShowcase from "@/showcase/primitives/input-showcase";
 import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
-import ResizableShowcase from "./showcase/primitives/resizable-showcase";
+import ResizableShowcase from "@/showcase/primitives/resizable-showcase";
 import SheetShowCase from "@/showcase/primitives/sheet-showcase";
 
 export const exampleRoutes = [

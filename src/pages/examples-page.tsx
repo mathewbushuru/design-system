@@ -9,7 +9,7 @@ function ExamplesPage() {
       <div>
         <LearnCompanyShowcase />
         <div className="my-8 h-px bg-primary/50 sm:hidden" />
-        <div className="my-10 hidden sm:block"></div>
+        <div className="my-10 hidden sm:block" />
 
         <TwistDawkinsShowcase />
       </div>
