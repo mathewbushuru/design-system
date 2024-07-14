@@ -3,14 +3,16 @@ import RootLayout from "@/layouts/root-layout";
 import LearnCompany from "@/examples/learn-company/app";
 import TwistDawkins from "@/examples/twist-dawkins/app";
 
+import HamburgerMenuShowcase from "@/showcase/animations/hamburger-menu-showcase";
+
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
-import CompositeButtonsShowcase from "./showcase/composites/composite-buttons-showcase";
+import CompositeButtonsShowcase from "@/showcase/composites/composite-buttons-showcase";
 
 import ButtonShowcase from "@/showcase/primitives/button-showcase";
 import CardShowcase from "@/showcase/primitives/card-showcase";
 import InputShowcase from "@/showcase/primitives/input-showcase";
 import DropdownMenuShowcase from "@/showcase/primitives/dropdown-menu-showcase";
-import ResizableShowcase from "./showcase/primitives/resizable-showcase";
+import ResizableShowcase from "@/showcase/primitives/resizable-showcase";
 import SheetShowCase from "@/showcase/primitives/sheet-showcase";
 
 export const exampleRoutes = [
@@ -31,6 +33,17 @@ export const exampleRoutes = [
         <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
           <TwistDawkins />
         </div>
+      </RootLayout>
+    ),
+  },
+];
+
+export const animationRoutes = [
+  {
+    path: "/animations/hamburger-menu",
+    element: (
+      <RootLayout key="hamburger-menu">
+        <HamburgerMenuShowcase />
       </RootLayout>
     ),
   },

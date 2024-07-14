@@ -8,10 +8,11 @@ import ThemeProvider from "@/components/theme-provider";
 
 import HomePage from "@/pages/home-page";
 import ExamplesPage from "@/pages/examples-page";
+import AnimationsPage from "@/pages/animations-page";
 import CompositesPage from "@/pages/composites-page";
 import PrimitivesPage from "@/pages/primitives-page";
 
-import { exampleRoutes, compositesRoutes, primitivesRoutes } from "@/routes";
+import { exampleRoutes, animationRoutes, compositesRoutes, primitivesRoutes } from "@/routes";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
     element: <ExamplesPage />,
   },
   ...exampleRoutes,
+  {
+    path: "/animations",
+    element: <AnimationsPage />,
+  },
+  ...animationRoutes,
   {
     path: "/composites",
     element: <CompositesPage />,

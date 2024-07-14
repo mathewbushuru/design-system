@@ -5,7 +5,7 @@ import LogoSvg from "@/assets/logo-svg";
 const HomePage = () => {
   return (
     <RootLayout>
-      <div className="flex  gap-8 p-6 pr-8 lg:pl-12 lg:pb-0">
+      <div className="flex gap-8 p-6 pr-8 lg:pb-0 lg:pl-12">
         {/* Home page left  */}
         <div className="max-w-screen-lg flex-[3]">
           <h1 className="mt-4 font-serif text-3xl leading-10 ">
@@ -31,35 +31,23 @@ const HomePage = () => {
             Atoms are the basic building blocks of all matter. In this system,
             this consists of <em>Component Primitives</em> from{" "}
             <a
-              href="https://react-spectrum.adobe.com/react-aria/getting-started.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-link"
-            >
-              {" "}
-              React Aria{" "}
-            </a>
-            and
-            <a
               href="https://www.radix-ui.com/primitives"
               target="_blank"
               rel="noopener noreferrer"
               className="text-link"
             >
-              {" "}
               Radix/UI{" "}
             </a>
-            that follow{" "}
+            and{" "}
             <a
-              href="https://github.com/shadcn-ui/ui"
+              href="https://react-spectrum.adobe.com/react-aria/getting-started.html"
               target="_blank"
               rel="noopener noreferrer"
               className="text-link"
             >
-              {" "}
-              Shadcn/UI's{" "}
+              React Aria{" "}
             </a>
-            styling.
+            .
           </p>
 
           <p className="mt-4  text-base leading-8">
@@ -68,17 +56,20 @@ const HomePage = () => {
             <em>Component Composites</em> which consists of related Component
             Primitives styled together. Component Composites, just like a
             combination of atoms in a molecule, take on distinct new properties,
-            and become more tangible and operational.
+            and become more tangible in the application.
           </p>
 
           <p className="mt-4  text-base leading-8">
             Organisms are assemblies of molecules functioning together as a
             unit. In this system, this is in form of <em>examples</em>. These
             are practical implemented designs of fictional companies that are
-            based on real ones. Just like biological organisms which can range
-            from single-celled organisms to incredibly sophisticated primates,
-            these examples range from simple landing pages to fully operational
-            web apps.
+            based on real ones.
+          </p>
+
+          <p className="mt-4  text-base leading-8">
+            I have also included an <em>animations</em> section. This
+            is my playground of reusable animated components
+            using Framer Motion and CSS animation properties.
           </p>
 
           <p className="mb-4 mt-4 text-base leading-8">
