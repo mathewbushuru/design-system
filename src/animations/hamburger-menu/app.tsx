@@ -5,6 +5,7 @@ import useDimensions from "@/animations/hamburger-menu/hooks/use-dimensions";
 
 import Sidebar from "@/animations/hamburger-menu/components/sidebar";
 import MenuToggle from "@/animations/hamburger-menu/components/menu-toggle";
+import SidebarList from "@/animations/hamburger-menu/components/sidebar-list";
 
 function HamburgerMenu() {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -21,6 +22,7 @@ function HamburgerMenu() {
       >
         <Sidebar />
         <MenuToggle toggle={toggleOpen} />
+        <SidebarList />
       </motion.nav>
     </div>
   );

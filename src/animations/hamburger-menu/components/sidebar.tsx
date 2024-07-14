@@ -10,8 +10,9 @@ const sidebarVariants: Variants = {
     },
   }),
   closed: {
-    clipPath: "circle(27px at 40px 40px)",
+    clipPath: "circle(30px at 40px 40px)",
     transition: {
+      delay: 0.2,
       type: "spring",
       damping: 40,
       stiffness: 400,
@@ -23,7 +24,7 @@ function Sidebar() {
   return (
     <motion.div
       variants={sidebarVariants}
-      className="absolute bottom-0 top-0 w-72 bg-secondary"
+      className="absolute bottom-0 top-0 w-80 bg-secondary"
     />
   );
 }
