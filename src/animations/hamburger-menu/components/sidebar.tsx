@@ -1,19 +1,29 @@
-import {motion} from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
-const sidebarVariants = {
-  open: (height  = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`
+const sidebarVariants: Variants = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)"
-  }
-}
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      type: "spring",
+      damping: 40,
+      stiffness: 400,
+    },
+  },
+};
 
 function Sidebar() {
   return (
-    <motion.div 
+    <motion.div
       variants={sidebarVariants}
-      className="bg-secondary absolute w-72 bottom-0 top-0"
+      className="absolute bottom-0 top-0 w-72 bg-secondary"
     />
   );
 }
