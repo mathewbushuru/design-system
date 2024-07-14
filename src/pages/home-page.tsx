@@ -67,7 +67,7 @@ const HomePage = () => {
           </p>
 
           <p className="mt-4  text-base leading-8">
-            I have also included an <em>animations</em> section. These
+            I have also included an <em>animations</em> section. This
             is my playground of reusable animated components
             using Framer Motion and CSS animation properties.
           </p>
