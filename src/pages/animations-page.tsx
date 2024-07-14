@@ -4,7 +4,7 @@ import HamburgerMenuShowcase from "@/showcase/animations/hamburger-menu-showcase
 function AnimationsPage() {
   return (
     <RootLayout>
-      <div>
+      <div data-testid="animations-page">
         <HamburgerMenuShowcase />
       </div>
     </RootLayout>
