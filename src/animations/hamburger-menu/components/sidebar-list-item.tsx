@@ -26,9 +26,11 @@ export default function SidebarListItem({
     <motion.li
       variants={sidebarListVariants}
       className="flex items-center gap-4"
+      whileTap={{scale: 0.98}}
+      whileHover={{scale: 1.02}}
     >
-      <div className="h-9 w-9 rounded-full bg-muted" />
-      <div className="w-52 rounded-md px-4 py-2 bg-muted">
+      <div className="h-9 w-9 rounded-full bg-muted dark:bg-primary" />
+      <div className="w-52 rounded-md px-4 py-2 bg-muted dark:bg-primary">
         {children}
       </div>
     </motion.li>

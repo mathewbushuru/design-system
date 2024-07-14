@@ -41,6 +41,7 @@ function Path(props: SVGMotionProps<SVGPathElement>) {
       stroke={theme === "light" ? "hsl(180, 4%, 5%)" : "hsl(171, 14%, 90%)"}
       strokeWidth={2}
       strokeLinecap="round"
+      fill="transparent"
       {...props}
     />
   );
