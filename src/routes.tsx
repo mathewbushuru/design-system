@@ -3,6 +3,8 @@ import RootLayout from "@/layouts/root-layout";
 import LearnCompany from "@/examples/learn-company/app";
 import TwistDawkins from "@/examples/twist-dawkins/app";
 
+import HamburgerMenuShowcase from "@/showcase/animations/hamburger-menu-showcase";
+
 import ButtonedInputShowcase from "@/showcase/composites/buttoned-input-showcase";
 import CompositeButtonsShowcase from "@/showcase/composites/composite-buttons-showcase";
 
@@ -31,6 +33,17 @@ export const exampleRoutes = [
         <div className="m-4 overflow-hidden rounded-md shadow-lg dark:border lg:mx-6">
           <TwistDawkins />
         </div>
+      </RootLayout>
+    ),
+  },
+];
+
+export const animationRoutes = [
+  {
+    path: "/animations/hamburger-menu",
+    element: (
+      <RootLayout key="hamburger-menu">
+        <HamburgerMenuShowcase />
       </RootLayout>
     ),
   },

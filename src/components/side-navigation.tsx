@@ -7,6 +7,10 @@ const examplesLinks = [
   { name: "Twist & Dawkins LLP", link: "/examples/twist-dawkins" },
 ];
 
+const animationLinks = [
+  { name: "Hamburger Menu", link: "/animations/hamburger-menu" },
+];
+
 const compositesLinks = [
   { name: "Buttoned Input", link: "/composites/buttoned-input" },
   { name: "Composite Buttons", link: "/composites/composite-buttons" },
@@ -50,6 +54,25 @@ function SideNavigation() {
           onClick={() => navigate(example.link)}
         >
           {example.name}
+        </Button>
+      ))}
+
+      {/* Animations  */}
+      <Button
+        variant="ghost"
+        className="justify-start"
+        onClick={() => navigate("/animations")}
+      >
+        Animations
+      </Button>
+      {animationLinks.map((animation) => (
+        <Button
+          key={animation.link}
+          variant="ghost"
+          className="justify-start pl-8 pr-0 font-normal text-muted-foreground"
+          onClick={() => navigate(animation.link)}
+        >
+          {animation.name}
         </Button>
       ))}
 

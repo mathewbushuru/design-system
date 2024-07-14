@@ -10,7 +10,7 @@ export default function ButtonedInputShowcase() {
         name="Buttoned Input"
         code="mathewbushuru/design-system"
         codeLink="https://github.com/mathewbushuru/design-system/blob/main/src/components/composites/buttoned-input.tsx"
-        uses="Button primitive, Input primitive, "
+        uses="Button primitive, Input primitive"
       >
         <h1 className="my-4 text-center font-semibold text-muted-foreground sm:text-left">
           Default ButtonedInput with Icon
