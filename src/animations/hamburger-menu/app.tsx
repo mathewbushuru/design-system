@@ -4,6 +4,7 @@ import { motion, useCycle } from "framer-motion";
 import useDimensions from "@/animations/hamburger-menu/hooks/use-dimensions";
 
 import Sidebar from "@/animations/hamburger-menu/components/sidebar";
+import MenuToggle from "@/animations/hamburger-menu/components/menu-toggle";
 
 function HamburgerMenu() {
   const [isOpen, toggleOpen] = useCycle(false, true);
@@ -19,9 +20,7 @@ function HamburgerMenu() {
         custom={height}
       >
         <Sidebar />
-        <button className="absolute top-7 left-7" onClick={() => toggleOpen()}>
-          Toggle
-        </button>
+        <MenuToggle toggle={toggleOpen} />
       </motion.nav>
     </div>
   );

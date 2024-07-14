@@ -10,7 +10,7 @@ const sidebarVariants: Variants = {
     },
   }),
   closed: {
-    clipPath: "circle(30px at 40px 40px)",
+    clipPath: "circle(27px at 40px 40px)",
     transition: {
       type: "spring",
       damping: 40,
