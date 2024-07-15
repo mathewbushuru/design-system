@@ -10,7 +10,7 @@ import SheetShowCase from "@/showcase/primitives/sheet-showcase";
 const PrimitivesPage = () => {
   return (
     <RootLayout>
-      <div>
+      <div data-testid="primitives-page">
         <ButtonShowcase />
         <div className="my-4 h-px bg-primary/50 sm:hidden" />
 

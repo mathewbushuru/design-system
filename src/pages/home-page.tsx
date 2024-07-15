@@ -5,7 +5,10 @@ import LogoSvg from "@/assets/logo-svg";
 const HomePage = () => {
   return (
     <RootLayout>
-      <div className="flex gap-8 p-6 pr-8 lg:pb-0 lg:pl-12">
+      <div
+        className="flex gap-8 p-6 pr-8 lg:pb-0 lg:pl-12"
+        data-testid="home-page"
+      >
         {/* Home page left  */}
         <div className="max-w-screen-lg flex-[3]">
           <h1 className="mt-4 font-serif text-3xl leading-10 ">
@@ -67,9 +70,9 @@ const HomePage = () => {
           </p>
 
           <p className="mt-4  text-base leading-8">
-            I have also included an <em>animations</em> section. This
-            is my playground of reusable animated components
-            using Framer Motion and CSS animation properties.
+            I have also included an <em>animations</em> section. This is my
+            playground of reusable animated components using Framer Motion and
+            CSS animation properties.
           </p>
 
           <p className="mb-4 mt-4 text-base leading-8">

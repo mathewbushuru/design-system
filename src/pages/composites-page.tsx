@@ -6,8 +6,10 @@ import CompositeButtonsShowcase from "@/showcase/composites/composite-buttons-sh
 const CompositesPage = () => {
   return (
     <RootLayout>
-      <ButtonedInputShowcase />
-      <CompositeButtonsShowcase />
+      <div data-testid="composites-page">
+        <ButtonedInputShowcase />
+        <CompositeButtonsShowcase />
+      </div>
     </RootLayout>
   );
 };

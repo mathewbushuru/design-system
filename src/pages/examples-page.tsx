@@ -6,7 +6,7 @@ import TwistDawkinsShowcase from "@/showcase/examples/twist-dawkins-showcase";
 function ExamplesPage() {
   return (
     <RootLayout>
-      <div>
+      <div data-testid="examples-page">
         <LearnCompanyShowcase />
         <div className="my-8 h-px bg-primary/50 sm:hidden" />
         <div className="my-10 hidden sm:block" />
