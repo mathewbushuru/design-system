@@ -43,7 +43,7 @@ const SheetOverlay = React.forwardRef<
     <SheetPrimitive.Overlay
       ref={ref}
       className={cn(
-        "fixed inset-0 bg-background/80 backdrop-blur-sm transition-all duration-100 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:fade-in data-[state=closed]:fade-out",
+        "fixed inset-0 bg-background/80 backdrop-blur-xs transition-all duration-100 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=open]:fade-in data-[state=closed]:fade-out",
         className,
       )}
       {...props}
@@ -156,7 +156,7 @@ const SheetContent = React.forwardRef<
         {...props}
       >
         {children}
-        <SheetPrimitive.Cancel className="absolute right-4 top-4 rounded-sm opacity-70 transition-opacity focus-within:ring-ring hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background">
+        <SheetPrimitive.Cancel className="absolute right-4 top-4 rounded-xs opacity-70 transition-opacity focus-within:ring-ring hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-offset-background">
           <X className="h-4 w-4" />
           <span className="sr-only">Close</span>
         </SheetPrimitive.Cancel>

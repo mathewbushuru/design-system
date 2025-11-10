@@ -8,7 +8,7 @@ export default function WhoWeAreSection() {
       </div>
 
       {/* Content  */}
-      <div className="lg:flex-[5] lg:pr-12">
+      <div className="lg:flex-5 lg:pr-12">
         <p className="antialiased sm:text-lg">
           Our lawyers around Europe work together in multidisciplinary teams to
           provide full-service capabilities to clients on their most complex

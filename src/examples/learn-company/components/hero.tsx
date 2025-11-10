@@ -3,7 +3,7 @@ import Button from "@/components/primitives/button";
 export default function Hero() {
   return (
     <div className="p-4 lg:p-8">
-      <div className="flex items-center max-w-screen-xl mx-auto">
+      <div className="flex items-center max-w-(--breakpoint-xl) mx-auto">
         {/* Hero left  */}
         <div className="flex-1">
           <h1 className="my-2 px-2 text-center text-xl font-semibold leading-9 sm:my-4 sm:text-2xl">

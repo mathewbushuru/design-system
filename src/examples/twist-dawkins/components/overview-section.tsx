@@ -8,7 +8,7 @@ export default function OverviewSection() {
       </div>
 
       {/* Content  */}
-      <div className="lg:flex-[5] lg:pr-12">
+      <div className="lg:flex-5 lg:pr-12">
         <p className="antialiased sm:text-lg">
           We are a legal consultancy based in the bustling heart of Victorian
           London, offering specialized services to a diverse clientele across
