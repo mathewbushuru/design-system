@@ -27,6 +27,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-link: var(--link);
 }
 
 :root {
@@ -57,6 +58,7 @@
   --border: oklch(0.9276 0.0058 264.5313);
   --input: oklch(0.9276 0.0058 264.5313);
   --ring: oklch(0.6231 0.188 259.8145);
+  --link: oklch(0.5558 0.1622 252.19);
 
   --radius: 0.625rem;
 }
@@ -89,6 +91,7 @@
   --border: oklch(0.3715 0 0);
   --input: oklch(0.3715 0 0);
   --ring: oklch(0.6231 0.188 259.8145);
+  --link: oklch(0.7642 0.1257 249.46);
 
   --radius: 0.625rem;
 }
@@ -139,12 +142,9 @@
   --color-destructive-foreground: hsl(0, 0%, 98%);
 
   --color-border: hsl(214.3, 31.8%, 91.4%);
-
   --color-input: hsl(214.3, 31.8%, 86.4%);
-
-  --color-link: hsl(172, 100%, 26%);
-
   --color-ring: hsl(173, 46%, 72%);
+  --color-link: hsl(172, 100%, 26%);
 }
 
 .v1.dark {
@@ -176,10 +176,7 @@
   --destructive-foreground: hsl(210, 40%, 98%);
 
   --border: hsl(173, 10%, 17%);
-
   --input: hsl(175, 10%, 25%);
-
   --ring: hsl(173, 50%, 45%);
-
   --link: hsl(170, 90%, 45%);
 }
