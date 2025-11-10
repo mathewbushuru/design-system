@@ -8,7 +8,7 @@ export default function ServicesSection() {
       </div>
 
       {/* Content  */}
-      <div className="space-y-5 sm:text-lg lg:flex-[5] lg:pr-12">
+      <div className="space-y-5 sm:text-lg lg:flex-5 lg:pr-12">
         <p>
           <span className="font-semibold text-primary">Transactional: </span>
           <span className="antialiased">

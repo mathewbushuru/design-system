@@ -8,7 +8,7 @@ import ExploreButton from "@/examples/learn-company/components/explore-button";
 export default function Navbar() {
   return (
     <div className="border-b px-3 py-4 lg:px-5">
-      <div className="flex items-center max-w-screen-xl mx-auto">
+      <div className="flex items-center max-w-(--breakpoint-xl) mx-auto">
         {/* Navbar left  */}
         <div className="flex flex-1 items-center justify-between lg:justify-start lg:gap-4">
           <Menu className="h-6 w-6 stroke-1 text-muted-foreground lg:hidden" />

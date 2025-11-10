@@ -12,7 +12,7 @@ export default function CompositeButtonsShowcase() {
       <h1 className="mb-6 mt-4 text-center font-semibold text-muted-foreground sm:text-left">
         Buttons from different brands
       </h1>
-      <div className="sm:max-w-screen-md lg:max-w-screen-lg">
+      <div className="sm:max-w-(--breakpoint-md) lg:max-w-(--breakpoint-lg)">
         <BrandButtons />
       </div>
     </ShowcaseLayout>

@@ -10,7 +10,7 @@ const HomePage = () => {
         data-testid="home-page"
       >
         {/* Home page left  */}
-        <div className="max-w-screen-lg flex-[3]">
+        <div className="max-w-(--breakpoint-lg) flex-3">
           <h1 className="mt-4 font-serif text-3xl leading-10 ">
             My <br /> Design <br />
             System
@@ -88,7 +88,7 @@ const HomePage = () => {
         </div>
 
         {/* Home page right  */}
-        <div className="hidden flex-[2] items-center justify-center lg:flex">
+        <div className="hidden flex-2 items-center justify-center lg:flex">
           <LogoSvg className="w-60 fill-primary opacity-95" />
         </div>
       </div>

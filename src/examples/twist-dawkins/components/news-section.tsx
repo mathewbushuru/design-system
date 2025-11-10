@@ -10,13 +10,13 @@ export default function NewsSection() {
       </div>
 
       {/* Content  */}
-      {/* <div className="grid grid-cols-1 gap-4 py-2 sm:grid-cols-3 sm:text-lg lg:flex-[5] lg:pr-12"> */}
-      <div className="dynamic-grid  grid gap-4 py-2 sm:text-lg lg:flex-[5] lg:pr-12">
+      {/* <div className="grid grid-cols-1 gap-4 py-2 sm:grid-cols-3 sm:text-lg lg:flex-5 lg:pr-12"> */}
+      <div className="dynamic-grid  grid gap-4 py-2 sm:text-lg lg:flex-5 lg:pr-12">
         <div className="group h-72 max-w-sm cursor-pointer border border-primary px-6 py-8 transition-all duration-500 hover:border-transparent hover:shadow-2xl">
           <p className="text-primary group-hover:text-foreground/80">
             22 June 1839 - Award
           </p>
-          <div className="mt-6 h-[2px] max-w-6 bg-primary"></div>
+          <div className="mt-6 h-0.5 max-w-6 bg-primary"></div>
           <p className="mt-6 text-lg text-muted-foreground antialiased group-hover:text-primary">
             Award Winners of the Decade <br /> 1839
           </p>
@@ -26,7 +26,7 @@ export default function NewsSection() {
           <p className="text-primary group-hover:text-foreground/80">
             15 June 1839 - Award
           </p>
-          <div className="mt-6 h-[2px] max-w-6 bg-primary"></div>
+          <div className="mt-6 h-0.5 max-w-6 bg-primary"></div>
           <p className="mt-6 text-lg text-muted-foreground antialiased group-hover:text-primary">
             Chambers UK Awards <br /> 1839
           </p>
@@ -36,7 +36,7 @@ export default function NewsSection() {
           <p className="text-primary group-hover:text-foreground/80">
             12 June 1839 - Award
           </p>
-          <div className="mt-6 h-[2px] max-w-6 bg-primary"></div>
+          <div className="mt-6 h-0.5 max-w-6 bg-primary"></div>
           <p className="mt-6 text-lg text-muted-foreground antialiased group-hover:text-primary">
             The Legal 500 United Kingdom 1839
           </p>
@@ -46,7 +46,7 @@ export default function NewsSection() {
           <p className="text-primary group-hover:text-foreground/80">
             08 June 1839 - Award
           </p>
-          <div className="mt-6 h-[2px] max-w-6 bg-primary"></div>
+          <div className="mt-6 h-0.5 max-w-6 bg-primary"></div>
           <p className="mt-6 text-lg text-muted-foreground antialiased group-hover:text-primary">
             PILI Pro Bono Recognition Roster 1839
           </p>
@@ -56,7 +56,7 @@ export default function NewsSection() {
           <p className="text-primary group-hover:text-foreground/80">
             02 June 1839 - Award
           </p>
-          <div className="mt-6 h-[2px] max-w-6 bg-primary"></div>
+          <div className="mt-6 h-0.5 max-w-6 bg-primary"></div>
           <p className="mt-6 text-lg text-muted-foreground antialiased group-hover:text-primary">
             Beacons of Justice Award
             <br /> 1839

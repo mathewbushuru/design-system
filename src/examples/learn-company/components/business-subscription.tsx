@@ -15,7 +15,7 @@ import SnowflakeSvg from "@/assets/snowflake-svg";
 export default function BusinessSubscription() {
   return (
     <div className="bg-muted p-4 lg:p-8">
-      <div className="mx-auto flex max-w-screen-xl flex-col gap-12 lg:flex-row">
+      <div className="mx-auto flex max-w-(--breakpoint-xl) flex-col gap-12 lg:flex-row">
         <div className="mx-auto max-w-lg lg:flex-1">
           <h1 className="mb-4 mt-8 px-2 text-center text-2xl sm:mb-6 sm:text-left">
             The ideal solution for your business

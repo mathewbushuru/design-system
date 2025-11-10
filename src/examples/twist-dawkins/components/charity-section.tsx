@@ -12,7 +12,7 @@ export default function CharitySection() {
         </div>
 
         {/* Content  */}
-        <div className="lg:flex-[5] lg:pr-12">
+        <div className="lg:flex-5 lg:pr-12">
           <p className="antialiased sm:text-lg">
             We are committed to advancing the communities in which we live and
             work, and we dedicate substantial energy, talent and resources to
